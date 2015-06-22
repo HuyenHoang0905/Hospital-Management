@@ -31,6 +31,15 @@ F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\ADL.pdb
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\BLL.pdb
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.csprojResolveAssemblyReference.cache
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormCapNhatKetQua.resources
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormNhapThuoc.resources
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormQLBNKCLS.resources
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormQLKhoDuoc.resources
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormQLVatTuYTePKCLS.resources
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormThemPhieuKham.resources
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormXemKetQua.resources
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormXuatThuoc.resources
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormXuatThuocChoBN.resources
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.Properties.Resources.resources
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.csproj.GenerateResource.Cache
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.exe

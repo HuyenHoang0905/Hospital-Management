@@ -44,14 +44,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormCapNhatKetQua.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormCapNhatKetQua.designer.cs">
+      <DependentUpon>FormCapNhatKetQua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNhapThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNhapThuoc.designer.cs">
+      <DependentUpon>FormNhapThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQLBNKCLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQLBNKCLS.designer.cs">
+      <DependentUpon>FormQLBNKCLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQLKhoDuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQLKhoDuoc.designer.cs">
+      <DependentUpon>FormQLKhoDuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQLVatTuYTePKCLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQLVatTuYTePKCLS.designer.cs">
+      <DependentUpon>FormQLVatTuYTePKCLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThemPhieuKham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThemPhieuKham.designer.cs">
+      <DependentUpon>FormThemPhieuKham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormXemKetQua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXemKetQua.designer.cs">
+      <DependentUpon>FormXemKetQua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormXuatThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXuatThuoc.Designer.cs">
+      <DependentUpon>FormXuatThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormXuatThuocChoBN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXuatThuocChoBN.designer.cs">
+      <DependentUpon>FormXuatThuocChoBN.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCapNhatKetQua.resx">
+      <DependentUpon>FormCapNhatKetQua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNhapThuoc.resx">
+      <DependentUpon>FormNhapThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQLBNKCLS.resx">
+      <DependentUpon>FormQLBNKCLS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQLKhoDuoc.resx">
+      <DependentUpon>FormQLKhoDuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQLVatTuYTePKCLS.resx">
+      <DependentUpon>FormQLVatTuYTePKCLS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThemPhieuKham.resx">
+      <DependentUpon>FormThemPhieuKham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormXemKetQua.resx">
+      <DependentUpon>FormXemKetQua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormXuatThuoc.resx">
+      <DependentUpon>FormXuatThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormXuatThuocChoBN.resx">
+      <DependentUpon>FormXuatThuocChoBN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -83,6 +158,10 @@
       <Project>{9ed8f878-5cf5-4891-a504-b47cbd5b8c5e}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\BungBN1.JPG" />
+    <Content Include="Images\NaoBN1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

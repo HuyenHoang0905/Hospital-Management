@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Quanlykhambenh_BVYHCT
 {
-    public partial class Form1 : Form
+    public partial class FormXemKetQua : Form
     {
-        public Form1()
+        public FormXemKetQua()
         {
             InitializeComponent();
         }
