@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quanlykhambenh_BVYHCT", "Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT.csproj", "{EE7C291F-5175-46C8-8610-1BDD75D67AAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADL", "ADL\ADL.csproj", "{7E699EB4-3362-4B5D-B4C8-FFDFBD968739}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "ADL\DAL.csproj", "{7E699EB4-3362-4B5D-B4C8-FFDFBD968739}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{9ED8F878-5CF5-4891-A504-B47CBD5B8C5E}"
 EndProject

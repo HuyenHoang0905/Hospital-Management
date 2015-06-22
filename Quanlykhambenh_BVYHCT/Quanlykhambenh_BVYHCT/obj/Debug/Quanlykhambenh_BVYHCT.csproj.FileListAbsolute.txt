@@ -23,3 +23,15 @@ C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhamb
 C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.csprojResolveAssemblyReference.cache
 C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.Properties.Resources.resources
 C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.csproj.GenerateResource.Cache
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\Quanlykhambenh_BVYHCT.exe.config
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\Quanlykhambenh_BVYHCT.exe
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\Quanlykhambenh_BVYHCT.pdb
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\ADL.dll
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\BLL.dll
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\ADL.pdb
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\BLL.pdb
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.csprojResolveAssemblyReference.cache
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.Properties.Resources.resources
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.csproj.GenerateResource.Cache
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.exe
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.pdb

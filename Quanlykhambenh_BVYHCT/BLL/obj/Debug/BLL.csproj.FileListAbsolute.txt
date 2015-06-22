@@ -12,3 +12,10 @@ C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BLL\bin\Deb
 C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BLL\obj\Debug\BLL.dll
 C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BLL\obj\Debug\BLL.pdb
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BLL\bin\Debug\BLL.dll
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BLL\bin\Debug\BLL.pdb
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BLL\bin\Debug\ADL.dll
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BLL\bin\Debug\ADL.pdb
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BLL\obj\Debug\BLL.dll
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BLL\obj\Debug\BLL.pdb

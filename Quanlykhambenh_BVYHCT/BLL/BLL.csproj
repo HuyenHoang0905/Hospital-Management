@@ -42,9 +42,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ADL\ADL.csproj">
+    <ProjectReference Include="..\ADL\DAL.csproj">
       <Project>{7e699eb4-3362-4b5d-b4c8-ffdfbd968739}</Project>
-      <Name>ADL</Name>
+      <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

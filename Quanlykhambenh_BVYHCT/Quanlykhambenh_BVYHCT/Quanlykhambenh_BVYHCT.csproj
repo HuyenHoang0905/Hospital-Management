@@ -75,9 +75,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ADL\ADL.csproj">
+    <ProjectReference Include="..\ADL\DAL.csproj">
       <Project>{7e699eb4-3362-4b5d-b4c8-ffdfbd968739}</Project>
-      <Name>ADL</Name>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{9ed8f878-5cf5-4891-a504-b47cbd5b8c5e}</Project>

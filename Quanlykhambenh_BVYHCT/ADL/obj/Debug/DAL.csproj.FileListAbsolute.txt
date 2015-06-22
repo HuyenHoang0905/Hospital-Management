@@ -1,0 +1,5 @@
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\ADL\bin\Debug\ADL.dll
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\ADL\bin\Debug\ADL.pdb
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\ADL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\ADL\obj\Debug\ADL.dll
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\ADL\obj\Debug\ADL.pdb
