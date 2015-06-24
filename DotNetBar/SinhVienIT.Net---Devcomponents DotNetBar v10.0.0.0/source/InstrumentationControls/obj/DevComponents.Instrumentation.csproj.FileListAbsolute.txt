@@ -1,0 +1,12 @@
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\bin\Release\DevComponents.Instrumentation.dll.config
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\bin\Release\DevComponents.Instrumentation.XML
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\bin\Release\DevComponents.Instrumentation.dll
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\bin\Release\DevComponents.Instrumentation.pdb
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\obj\Release2005\ResolveAssemblyReference.cache
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\obj\Release2005\DevComponents.Instrumentation.KnobControl.ico
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\obj\Release2005\DevComponents.Instrumentation.GaugeControl.ico
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\obj\Release2005\DevComponents.Instrumentation.Properties.Resources.resources
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\obj\Release2005\DevComponents.RemindForm.resources
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\obj\Release2005\DevComponents.Instrumentation.csproj.GenerateResource.Cache
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\obj\Release2005\DevComponents.Instrumentation.dll
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\obj\Release2005\DevComponents.Instrumentation.pdb

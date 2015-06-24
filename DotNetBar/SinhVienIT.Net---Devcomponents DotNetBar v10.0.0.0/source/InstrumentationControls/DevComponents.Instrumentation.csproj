@@ -1,0 +1,181 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3084E369-3D7B-4918-958F-2776DA03E6BC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevComponents.Instrumentation</RootNamespace>
+    <AssemblyName>DevComponents.Instrumentation</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>DotNetBarKnobControl.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;/define:TRIAL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release2005|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>bin\Release\DevComponents.Instrumentation.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial2005|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;TRIAL</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>bin\Release\DevComponents.Instrumentation.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gauges\GaugeControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gauges\GaugeControl.Designer.cs">
+      <DependentUpon>GaugeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\GaugeFrame\GaugeFrameCircularRenderer.cs" />
+    <Compile Include="Gauges\GaugeFrame\GaugeFrameRectangularRenderer.cs" />
+    <Compile Include="Gauges\GaugeFrame\GaugeFrameRenderer.cs" />
+    <Compile Include="Gauges\GaugeFrame\GaugeFrameRoundRectRenderer.cs" />
+    <Compile Include="Gauges\GaugeIndicator\DigitalElement.cs" />
+    <Compile Include="Gauges\GaugeIndicator\GaugeIndicator.cs" />
+    <Compile Include="Gauges\GaugeIndicator\IndicatorRange.cs" />
+    <Compile Include="Gauges\GaugeIndicator\MechanicalElement.cs" />
+    <Compile Include="Gauges\GaugeIndicator\NumericElement.cs" />
+    <Compile Include="Gauges\GaugeIndicator\NumericIndicator.cs" />
+    <Compile Include="Gauges\GaugeIndicator\NumericRange.cs" />
+    <Compile Include="Gauges\GaugeIndicator\Seg16Element.cs" />
+    <Compile Include="Gauges\GaugeIndicator\Seg7Element.cs" />
+    <Compile Include="Gauges\GaugeIndicator\StateIndicator.cs" />
+    <Compile Include="Gauges\GaugeIndicator\StateRange.cs" />
+    <Compile Include="Gauges\GaugeLabel\GaugeCustomLabel.cs" />
+    <Compile Include="Gauges\GaugeLabel\GaugeBaseLabel.cs" />
+    <Compile Include="Gauges\GaugePin\GaugePinLabel.cs" />
+    <Compile Include="Gauges\GaugeScale\GaugeCircularScale.cs" />
+    <Compile Include="Gauges\GaugeScale\GaugeLinearScale.cs" />
+    <Compile Include="Gauges\GaugeTickMark\GaugeTickMarkLabel.cs" />
+    <Compile Include="Gauges\GaugeLabel\LabelLayout.cs" />
+    <Compile Include="Gauges\GaugeLabel\LabelPoint.cs" />
+    <Compile Include="Gauges\GaugeItem\GaugeMarker.cs" />
+    <Compile Include="Gauges\GaugePointers\GaugeBarRenderer.cs" />
+    <Compile Include="Gauges\GaugePointers\GaugeNeedleRenderer.cs" />
+    <Compile Include="Gauges\GaugePointers\GaugePointer.cs" />
+    <Compile Include="Gauges\GaugePointers\GaugeMarkerRenderer.cs" />
+    <Compile Include="Gauges\GaugeItem\GaugeItem.cs" />
+    <Compile Include="Gauges\GaugeLabel\GaugeIntervalLabel.cs" />
+    <Compile Include="Gauges\GaugePin\GaugePin.cs" />
+    <Compile Include="Gauges\GaugePointers\GaugePointerRenderer.cs" />
+    <Compile Include="Gauges\GaugePointers\GaugeThermoRenderer.cs" />
+    <Compile Include="Gauges\GaugeStrip\GaugeRange.cs" />
+    <Compile Include="Gauges\GaugeStrip\GaugeSection.cs" />
+    <Compile Include="Gauges\GaugeStrip\GaugeStrip.cs" />
+    <Compile Include="Gauges\GaugeItem\GaugeText.cs" />
+    <Compile Include="Gauges\GaugeTickMark\GaugeTickMark.cs" />
+    <Compile Include="Gauges\GaugeFrame\GaugeFrame.cs" />
+    <Compile Include="Gauges\GaugeItem\GaugeImage.cs">
+    </Compile>
+    <Compile Include="Gauges\GaugeScale\GaugeScale.cs" />
+    <Compile Include="Gauges\GaugeTickMark\GaugeTickMarkBase.cs" />
+    <Compile Include="Gauges\GaugeTickMark\TickMarkLayout.cs" />
+    <Compile Include="Gauges\GaugeTickMark\TickPoint.cs" />
+    <Compile Include="Gauges\GaugeItem\GradientFillColor.cs" />
+    <Compile Include="Gauges\Licensing.cs" />
+    <Compile Include="Gauges\PointFConverter.cs" />
+    <Compile Include="Gauges\RemindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Knobs\BaseKnob.cs" />
+    <Compile Include="Primitives\GenericCollection.cs" />
+    <Compile Include="Primitives\ColorFactory.cs" />
+    <Compile Include="Knobs\KnobColorTable.cs" />
+    <Compile Include="Knobs\KnobControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Knobs\KnobControl.Designer.cs">
+      <DependentUpon>KnobControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Knobs\KnobStyle1.cs" />
+    <Compile Include="Knobs\KnobStyle2.cs" />
+    <Compile Include="Knobs\KnobStyle3.cs" />
+    <Compile Include="Knobs\KnobStyle4.cs" />
+    <Compile Include="Primitives\LinearGradientColorTable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DotNetBarKnobControl.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Gauges\RemindForm.resx">
+      <DependentUpon>RemindForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KnobControl.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GaugeControl.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

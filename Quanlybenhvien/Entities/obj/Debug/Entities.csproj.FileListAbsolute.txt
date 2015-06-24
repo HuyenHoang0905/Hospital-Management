@@ -1,0 +1,9 @@
+C:\Users\PC\Desktop\Quanlybenhvien\Entities\bin\Debug\Entities.dll
+C:\Users\PC\Desktop\Quanlybenhvien\Entities\bin\Debug\Entities.pdb
+C:\Users\PC\Desktop\Quanlybenhvien\Entities\obj\Debug\Entities.dll
+C:\Users\PC\Desktop\Quanlybenhvien\Entities\obj\Debug\Entities.pdb
+C:\Users\PC\Desktop\Quanlybenhvien\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Entities\bin\Debug\Entities.dll
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Entities\bin\Debug\Entities.pdb
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Entities\obj\Debug\Entities.dll
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Entities\obj\Debug\Entities.pdb

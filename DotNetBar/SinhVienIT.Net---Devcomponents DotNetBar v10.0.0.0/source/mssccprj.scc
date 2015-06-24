@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[DotNetBar.csproj]
+SCC_Aux_Path = "\\Fs\sourcesafe\"
+SCC_Project_Name = "$/DotNetBar/Component", WLBAAAAA
+
+[DotNetBar.sln]
+SCC_Aux_Path = "\\Fs\sourcesafe\"
+SCC_Project_Name = "$/DotNetBar/Component", WLBAAAAA

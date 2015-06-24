@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{37FBFDB8-C2D4-400F-A7EF-3CCA9258D805}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevComponents.DotNetBarKnobControl.Design</RootNamespace>
+    <AssemblyName>DevComponents.Instrumentation.Design</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>KnobControlDesignTime.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial|AnyCPU' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release2005|AnyCPU' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial2005|AnyCPU' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE;TRIAL</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="GaugeControlActionList.cs" />
+    <Compile Include="GaugeControlDesigner.cs" />
+    <Compile Include="FormatStringDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormatStringDropDown.Designer.cs">
+      <DependentUpon>FormatStringDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormatStringEditor.cs" />
+    <Compile Include="GaugeCollectionEditor.cs" />
+    <Compile Include="GaugeItemCollectionEditor.cs" />
+    <Compile Include="LocationDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LocationDropDown.Designer.cs">
+      <DependentUpon>LocationDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationEditor.cs" />
+    <Compile Include="PivotPointDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PivotPointDropDown.Designer.cs">
+      <DependentUpon>PivotPointDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PivotPointEditor.cs" />
+    <Compile Include="RangeValueDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RangeValueDropDown.Designer.cs">
+      <DependentUpon>RangeValueDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RangeValueEditor.cs" />
+    <Compile Include="SizeDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SizeDropDown.Designer.cs">
+      <DependentUpon>SizeDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SizeEditor.cs" />
+    <Compile Include="GaugePropertyGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GaugePropertyGrid.Designer.cs">
+      <DependentUpon>GaugePropertyGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KnobControlActionList.cs" />
+    <Compile Include="KnobControlDesigner.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GaugeStyleDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GaugeStyleDialog.Designer.cs">
+      <DependentUpon>GaugeStyleDialog.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KnobControlDesignTime.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DevComponents.Instrumentation.csproj">
+      <Project>{3084E369-3D7B-4918-958F-2776DA03E6BC}</Project>
+      <Name>DevComponents.Instrumentation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormatStringDropDown.resx">
+      <DependentUpon>FormatStringDropDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationDropDown.resx">
+      <DependentUpon>LocationDropDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PivotPointDropDown.resx">
+      <DependentUpon>PivotPointDropDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RangeValueDropDown.resx">
+      <DependentUpon>RangeValueDropDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SizeDropDown.resx">
+      <DependentUpon>SizeDropDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugePropertyGrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GaugePropertyGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeStyleDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GaugeStyleDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Copy.png" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="cust_pm_reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="cust_pm_delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="cust_pm_name" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="cust_pm_stydef" xml:space="preserve">
+    <value>Default Style</value>
+  </data>
+  <data name="cust_pm_stytextonly" xml:space="preserve">
+    <value>Text Only (Always)</value>
+  </data>
+  <data name="cust_pm_styimagetext" xml:space="preserve">
+    <value>Image and Text (Always)</value>
+  </data>
+  <data name="cust_pm_begingroup" xml:space="preserve">
+    <value>Begin Group</value>
+  </data>
+  <data name="cust_caption" xml:space="preserve">
+    <value>Customize</value>
+  </data>
+  <data name="cust_tab_toolbars" xml:space="preserve">
+    <value>Toolbars</value>
+  </data>
+  <data name="cust_tab_commands" xml:space="preserve">
+    <value>Commands</value>
+  </data>
+  <data name="cust_tab_options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="cust_btn_keyboard" xml:space="preserve">
+    <value>&amp;Keyboard...</value>
+  </data>
+  <data name="cust_btn_close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="cust_btn_new" xml:space="preserve">
+    <value>&amp;New...</value>
+  </data>
+  <data name="cust_btn_rename" xml:space="preserve">
+    <value>&amp;Rename...</value>
+  </data>
+  <data name="cust_btn_delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="cust_btn_reset" xml:space="preserve">
+    <value>&amp;Reset...</value>
+  </data>
+  <data name="cust_lbl_cmdsins" xml:space="preserve">
+    <value>To add a command to Bar select the category and drag the command out of this box to a Bar.</value>
+  </data>
+  <data name="cust_lbl_cats" xml:space="preserve">
+    <value>Cate&amp;gories:</value>
+  </data>
+  <data name="cust_lbl_cmds" xml:space="preserve">
+    <value>Comman&amp;ds:</value>
+  </data>
+  <data name="cust_lbl_tlbs" xml:space="preserve">
+    <value>Toolb&amp;ars:</value>
+  </data>
+  <data name="cust_lbl_pmt" xml:space="preserve">
+    <value>Personalized Menus and Toolbars</value>
+  </data>
+  <data name="cust_chk_fullmenus" xml:space="preserve">
+    <value>Always show full menus</value>
+  </data>
+  <data name="cust_chk_delay" xml:space="preserve">
+    <value>Show full menus after a short delay</value>
+  </data>
+  <data name="cust_btn_resetusage" xml:space="preserve">
+    <value>&amp;Reset my usage data</value>
+  </data>
+  <data name="cust_lbl_other" xml:space="preserve">
+    <value>Other:</value>
+  </data>
+  <data name="cust_chk_showst" xml:space="preserve">
+    <value>Show Screen&amp;Tips on Toolbars</value>
+  </data>
+  <data name="cust_chk_showsk" xml:space="preserve">
+    <value>Show &amp;Shortcut Keys in ScreenTips</value>
+  </data>
+  <data name="cust_lbl_menuan" xml:space="preserve">
+    <value>Menu Animation:</value>
+  </data>
+  <data name="cust_cbo_none" xml:space="preserve">
+    <value>(None)</value>
+  </data>
+  <data name="cust_cbo_system" xml:space="preserve">
+    <value>System Default</value>
+  </data>
+  <data name="cust_cbo_random" xml:space="preserve">
+    <value>Random</value>
+  </data>
+  <data name="cust_cbo_unfold" xml:space="preserve">
+    <value>Unfold</value>
+  </data>
+  <data name="cust_cbo_slide" xml:space="preserve">
+    <value>Slide</value>
+  </data>
+  <data name="cust_cbo_fade" xml:space="preserve">
+    <value>Fade</value>
+  </data>
+  <data name="cust_msg_delete" xml:space="preserve">
+    <value>Are you sure you want to delete the &lt;barname&gt; toolbar?</value>
+  </data>
+  <data name="cust_mnu_addremove" xml:space="preserve">
+    <value>&amp;Add or Remove Buttons</value>
+  </data>
+  <data name="cust_mnu_reset" xml:space="preserve">
+    <value>Reset Bar</value>
+  </data>
+  <data name="cust_mnu_cust" xml:space="preserve">
+    <value>Customize...</value>
+  </data>
+  <data name="cust_mnu_tooltip" xml:space="preserve">
+    <value>Bar Options</value>
+  </data>
+  <data name="barname_caption" xml:space="preserve">
+    <value>New Toolbar</value>
+  </data>
+  <data name="barrename_caption" xml:space="preserve">
+    <value>Rename Toolbar</value>
+  </data>
+  <data name="barname_name" xml:space="preserve">
+    <value>&amp;Toolbar Name:</value>
+  </data>
+  <data name="barname_ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="barname_cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="barname_msginvalidname" xml:space="preserve">
+    <value>Toolbar name cannot be empty.</value>
+  </data>
+  <data name="mdisystt_minimize" xml:space="preserve">
+    <value>Minimize</value>
+  </data>
+  <data name="mdisystt_restore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="mdisystt_close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="mdisysmenu_restore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="mdisysmenu_move" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="mdisysmenu_size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="mdisysmenu_minimize" xml:space="preserve">
+    <value>Minimize</value>
+  </data>
+  <data name="mdisysmenu_maximize" xml:space="preserve">
+    <value>Maximize</value>
+  </data>
+  <data name="mdisysmenu_close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="mdisysmenu_next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="barsys_autohide_tooltip" xml:space="preserve">
+    <value>Auto-Hide</value>
+  </data>
+  <data name="barsys_customize_tooltip" xml:space="preserve">
+    <value>Customize</value>
+  </data>
+  <data name="barsys_close_tooltip" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="sys_morebuttons" xml:space="preserve">
+    <value>More Buttons</value>
+  </data>
+  <data name="sys_custombar" xml:space="preserve">
+    <value>Custom Bar</value>
+  </data>
+  <data name="navbar_showmorebuttons" xml:space="preserve">
+    <value>Show &amp;More Buttons</value>
+  </data>
+  <data name="navbar_showfewerbuttons" xml:space="preserve">
+    <value>Show &amp;Fewer Buttons</value>
+  </data>
+  <data name="navbar_navpaneoptions" xml:space="preserve">
+    <value>Na&amp;vigation Pane Options...</value>
+  </data>
+  <data name="navPaneCollapseTooltip" xml:space="preserve">
+    <value>Collapse the Navigation Pane</value>
+  </data>
+  <data name="navPaneExpandTooltip" xml:space="preserve">
+    <value>Expand the Navigation Pane</value>
+  </data>
+  <data name="colorpicker_themecolorslabel" xml:space="preserve">
+    <value>Theme Colors</value>
+  </data>
+  <data name="colorpicker_standardcolorslabel" xml:space="preserve">
+    <value>Standard Colors</value>
+  </data>
+  <data name="colorpicker_morecolors" xml:space="preserve">
+    <value>&amp;More Colors...</value>
+  </data>
+  <data name="colorpickerdialog_caption" xml:space="preserve">
+    <value>Colors</value>
+  </data>
+  <data name="colorpickerdialog_okbutton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="colorpickerdialog_cancelbutton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="colorpickerdialog_newcolorlabel" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="colorpickerdialog_currentcolorlabel" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="colorpickerdialog_standardcolorslabel" xml:space="preserve">
+    <value>Colors:</value>
+  </data>
+  <data name="colorpickerdialog_customcolorslabel" xml:space="preserve">
+    <value>Colors:</value>
+  </data>
+  <data name="colorpickerdialog_greenlabel" xml:space="preserve">
+    <value>&amp;Green:</value>
+  </data>
+  <data name="colorpickerdialog_bluelabel" xml:space="preserve">
+    <value>&amp;Blue:</value>
+  </data>
+  <data name="colorpickerdialog_redlabel" xml:space="preserve">
+    <value>&amp;Red:</value>
+  </data>
+  <data name="colorpickerdialog_tabstandard" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="colorpickerdialog_tabcustom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+</root>

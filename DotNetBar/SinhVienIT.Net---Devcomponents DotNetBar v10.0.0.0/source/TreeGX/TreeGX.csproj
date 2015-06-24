@@ -1,0 +1,520 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F6575883-1BDD-40BB-BEEC-6B0154C5C85E}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DevComponents.TreeGX</AssemblyName>
+    <AssemblyOriginatorKeyFile>TreeGX.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DevComponents.Tree</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;TREEGX;FRAMEWORK20</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;TREEGX;FRAMEWORK20</DefineConstants>
+    <DocumentationFile>DevComponents.TreeGX.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;TREEGX;TRIAL;FRAMEWORK20</DefineConstants>
+    <DocumentationFile>DevComponents.TreeGX.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <Name>System.Drawing.Design</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cell.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CellCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CellEditEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CellImages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ColorFunctions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ColorScheme.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ColorTypeEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ColumnHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ColumnHeaderCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ColumnWidth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandButtonEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConnectorPointsCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContentManager\BlockLayoutManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContentManager\Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContentManager\IBlock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContentManager\IBlockExtended.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContentManager\IContentLayoutManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContentManager\SerialContentLayoutManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\ColorSchemeColorConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\ComponentNotLicensed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ElementStyleTypeEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\NodeConnectorTypeEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\NodeContextMenuTypeEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\NodeDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\TreeGXDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DisplayHelp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\CellDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\ConnectorRendererEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\CurveConnectorDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\LineConnectorDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeCellRendererEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeCommandDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeCommandPartRendererEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeConnectorDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeExpandDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeExpandEllipseDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeExpandImageDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeExpandPartRendererEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeExpandRectDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeProfessionalColorTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeProfessionalRenderer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeRenderer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeRendererEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeSelectionDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeSystemRenderer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\NodeTreeDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\SelectionRendererEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Display\TreeBackgroundRendererEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ElementSerializer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ElementStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ElementStyleCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ElementStyleDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ElementStyleLayout.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ElementStyle\BackgroundColorBlend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ElementStyle\BackgroundColorBlendCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ElementStyle\BackgroundColorBlendConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ElementStyle\IElementStyleClassProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventDelegates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Events\MarkupLinkClickEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Events\SerializeNodeEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeaderDefinition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeadersCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\SystemHelpers.cs" />
+    <Compile Include="ImageIndexEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="INodeNotify.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interop\WinApi.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="KeyNavigation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Layout\ColumnHeaderLayout.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Layout\NodeCellLayout.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Layout\NodeDiagramLayout.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Layout\NodeLayout.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Layout\NodeLayoutContextInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Layout\NodeListLayout.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Layout\NodeMapLayout.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Layout\NodeTreeLayout.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkedNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkedNodesCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Node.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NodeCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NodeConnector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NodeOperations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NodeStyles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Padding.cs" />
+    <Compile Include="TextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextDrawing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\BodyElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\ContainerElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\Div.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\EndMarkupElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\ExpandElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\FontChangeElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\FontElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\Heading.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\HyperLink.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\IActiveMarkupElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\ImageElement.cs" />
+    <Compile Include="TextMarkup\Italic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\MarkupDrawContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\MarkupElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\MarkupElementCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\MarkupLayoutManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\MarkupParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\MarkupSettings.cs" />
+    <Compile Include="TextMarkup\NewLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\Paragraph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\Span.cs" />
+    <Compile Include="TextMarkup\Strike.cs" />
+    <Compile Include="TextMarkup\Strong.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\TextElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextMarkup\Underline.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextSettings.cs" />
+    <Compile Include="TreeAreaInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreeGX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeGXCellCancelEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreeGXCellEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreeGXDragDropEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreeGXNodeCancelEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreeGXNodeCollectionEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreeGXNodeEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreeGXNodeMouseEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreeGXRootSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeSerializer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilites.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WinApi.cs" />
+    <EmbeddedResource Include="ColorPicker.resx">
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ComponentNotLicensed.resx">
+      <DependentUpon>ComponentNotLicensed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeGX.ico" />
+    <EmbeddedResource Include="TreeGXRootSelector.resx">
+      <DependentUpon>TreeGXRootSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TreeGX.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

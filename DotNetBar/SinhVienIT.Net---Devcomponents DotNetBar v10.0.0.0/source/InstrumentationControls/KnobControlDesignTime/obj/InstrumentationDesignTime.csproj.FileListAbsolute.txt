@@ -1,0 +1,15 @@
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\bin\Release\DevComponents.Instrumentation.Design.dll
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\bin\Release\DevComponents.Instrumentation.Design.pdb
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\KnobControlDesignTime\obj\Release2005\ResolveAssemblyReference.cache
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\KnobControlDesignTime\obj\Release2005\DevComponents.DotNetBarKnobControl.Design.Resources.Copy.png
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\KnobControlDesignTime\obj\Release2005\DevComponents.Instrumentation.Design.FormatStringDropDown.resources
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\KnobControlDesignTime\obj\Release2005\DevComponents.Instrumentation.Design.LocationDropDown.resources
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\KnobControlDesignTime\obj\Release2005\DevComponents.Instrumentation.Design.PivotPointDropDown.resources
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\KnobControlDesignTime\obj\Release2005\DevComponents.Instrumentation.Design.RangeValueDropDown.resources
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\KnobControlDesignTime\obj\Release2005\DevComponents.Instrumentation.Design.SizeDropDown.resources
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\KnobControlDesignTime\obj\Release2005\DevComponents.DotNetBarKnobControl.Design.GaugePropertyGrid.resources
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\KnobControlDesignTime\obj\Release2005\DevComponents.DotNetBarKnobControl.Design.Properties.Resources.resources
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\KnobControlDesignTime\obj\Release2005\DevComponents.DotNetBarKnobControl.Design.GaugeStyleDialog.resources
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\KnobControlDesignTime\obj\Release2005\InstrumentationDesignTime.csproj.GenerateResource.Cache
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\KnobControlDesignTime\obj\Release2005\DevComponents.Instrumentation.Design.dll
+C:\Products\DotNetBarBuild\SourceCode\trunk\InstrumentationControls\KnobControlDesignTime\obj\Release2005\DevComponents.Instrumentation.Design.pdb
