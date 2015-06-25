@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLBNKCLS));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -92,21 +93,25 @@
             // 
             // BTCapNhatKQ
             // 
+            this.BTCapNhatKQ.Image = ((System.Drawing.Image)(resources.GetObject("BTCapNhatKQ.Image")));
             this.BTCapNhatKQ.Location = new System.Drawing.Point(267, 265);
             this.BTCapNhatKQ.Name = "BTCapNhatKQ";
-            this.BTCapNhatKQ.Size = new System.Drawing.Size(75, 51);
+            this.BTCapNhatKQ.Size = new System.Drawing.Size(91, 51);
             this.BTCapNhatKQ.TabIndex = 3;
             this.BTCapNhatKQ.Text = "Cập nhật kết quả KCLS";
+            this.BTCapNhatKQ.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTCapNhatKQ.UseVisualStyleBackColor = true;
             this.BTCapNhatKQ.Click += new System.EventHandler(this.BTCapNhatKQ_Click);
             // 
             // BTThemPhieuCLS
             // 
+            this.BTThemPhieuCLS.Image = ((System.Drawing.Image)(resources.GetObject("BTThemPhieuCLS.Image")));
             this.BTThemPhieuCLS.Location = new System.Drawing.Point(267, 211);
             this.BTThemPhieuCLS.Name = "BTThemPhieuCLS";
-            this.BTThemPhieuCLS.Size = new System.Drawing.Size(75, 44);
+            this.BTThemPhieuCLS.Size = new System.Drawing.Size(91, 44);
             this.BTThemPhieuCLS.TabIndex = 4;
             this.BTThemPhieuCLS.Text = "Thêm phiếu khám CLS";
+            this.BTThemPhieuCLS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTThemPhieuCLS.UseVisualStyleBackColor = true;
             this.BTThemPhieuCLS.Click += new System.EventHandler(this.BTThemPhieuCLS_Click);
             // 
@@ -162,9 +167,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(348, 40);
+            this.groupBox1.Location = new System.Drawing.Point(364, 40);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(569, 440);
+            this.groupBox1.Size = new System.Drawing.Size(553, 426);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin bệnh nhân";
@@ -342,30 +347,36 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(267, 32);
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(267, 66);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 28);
             this.button2.TabIndex = 11;
             this.button2.Text = "Tìm kiếm";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
             // 
             // BTXemKQ
             // 
+            this.BTXemKQ.Image = ((System.Drawing.Image)(resources.GetObject("BTXemKQ.Image")));
             this.BTXemKQ.Location = new System.Drawing.Point(267, 326);
             this.BTXemKQ.Name = "BTXemKQ";
-            this.BTXemKQ.Size = new System.Drawing.Size(75, 44);
+            this.BTXemKQ.Size = new System.Drawing.Size(91, 44);
             this.BTXemKQ.TabIndex = 12;
             this.BTXemKQ.Text = "Xem kết quả khám";
+            this.BTXemKQ.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTXemKQ.UseVisualStyleBackColor = true;
             this.BTXemKQ.Click += new System.EventHandler(this.BTXemKQ_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(267, 157);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(267, 136);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 44);
+            this.button1.Size = new System.Drawing.Size(91, 52);
             this.button1.TabIndex = 13;
             this.button1.Text = "Chuyển kết quả";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // FormQLBNKCLS
@@ -383,6 +394,7 @@
             this.Controls.Add(this.BTCapNhatKQ);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormQLBNKCLS";
             this.Text = "Quản lý bệnh nhân khoa khám cận lâm sàng";

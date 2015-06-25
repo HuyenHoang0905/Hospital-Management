@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLKhoDuoc));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -132,38 +133,48 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(388, 401);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(174, 415);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(182, 52);
             this.button1.TabIndex = 2;
             this.button1.Text = "Nhập thuốc";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(502, 401);
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(568, 415);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(144, 52);
             this.button2.TabIndex = 3;
             this.button2.Text = "Xuất thuốc";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(445, 430);
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(390, 415);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 52);
+            this.button3.Size = new System.Drawing.Size(135, 52);
             this.button3.TabIndex = 4;
             this.button3.Text = "Bán thuốc cho bệnh nhân";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.Location = new System.Drawing.Point(276, 7);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 28);
+            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button4.Size = new System.Drawing.Size(80, 28);
             this.button4.TabIndex = 14;
             this.button4.Text = "Tìm kiếm";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button4.UseVisualStyleBackColor = true;
             // 
             // textBox9
@@ -197,6 +208,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormQLKhoDuoc";
             this.Text = "Quản lý kho dược";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

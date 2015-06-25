@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormXuatThuocChoBN));
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -367,7 +368,7 @@
             this.label9.TabIndex = 57;
             this.label9.Text = "Loại bệnh nhân:";
             // 
-            // FormNhapThuoc
+            // FormXuatThuocChoBN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -396,7 +397,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Name = "FormNhapThuoc";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "FormXuatThuocChoBN";
             this.Text = "Xuất thuốc cho bệnh nhân";
             this.ResumeLayout(false);
             this.PerformLayout();
