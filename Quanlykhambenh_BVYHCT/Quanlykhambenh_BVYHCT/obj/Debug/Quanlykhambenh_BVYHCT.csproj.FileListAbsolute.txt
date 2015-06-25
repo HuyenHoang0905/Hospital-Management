@@ -52,11 +52,6 @@ C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlyk
 C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.pdb
 C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\Quanlykhambenh_BVYHCT.exe
 C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\Quanlykhambenh_BVYHCT.pdb
-C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\ADL.dll
-C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\BLL.dll
-C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\ADL.pdb
-C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\BLL.pdb
-C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.csprojResolveAssemblyReference.cache
 C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormCapNhatKetQua.resources
 C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormNhapThuoc.resources
 C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormQLBNKCLS.resources
