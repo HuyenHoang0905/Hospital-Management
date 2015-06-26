@@ -31,3 +31,6 @@ C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\bin
 C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\bin\Debug\DAL.pdb
 C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.exe
 C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.pdb
+C:\Users\PC\Desktop\Thực tập công nghệ thông tin\Hospital-Management\Quanlybenhvien\Quanlybenhvien\bin\Debug\Quanlybenhvien.exe.config
+C:\Users\PC\Desktop\Thực tập công nghệ thông tin\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.exe
+C:\Users\PC\Desktop\Thực tập công nghệ thông tin\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.pdb
