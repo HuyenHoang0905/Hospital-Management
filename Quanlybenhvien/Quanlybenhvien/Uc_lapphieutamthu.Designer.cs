@@ -229,7 +229,7 @@
             this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.dataGridViewX1.Location = new System.Drawing.Point(3, 34);
             this.dataGridViewX1.Name = "dataGridViewX1";
-            this.dataGridViewX1.Size = new System.Drawing.Size(389, 152);
+            this.dataGridViewX1.Size = new System.Drawing.Size(389, 167);
             this.dataGridViewX1.TabIndex = 0;
             // 
             // groupBox1

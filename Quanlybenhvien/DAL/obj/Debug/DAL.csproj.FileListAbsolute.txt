@@ -1,0 +1,7 @@
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\DAL\bin\Debug\DAL.dll
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\DAL\bin\Debug\DAL.pdb
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\DAL\bin\Debug\Entities.dll
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\DAL\bin\Debug\Entities.pdb
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\DAL\obj\Debug\DAL.dll
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\DAL\obj\Debug\DAL.pdb

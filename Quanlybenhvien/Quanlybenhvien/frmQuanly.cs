@@ -13,9 +13,17 @@ namespace Quanlybenhvien
 {
     public partial class frmQuanly : Form
     {
+        public static int role = -1;
         public frmQuanly()
         {
             InitializeComponent();
+            if (role!=1)
+            {
+                btnThanhtoan.Visible = false;
+                ribItemThanhtoan.Visible = false;
+
+               //ribItemThanhtoan.
+            }
         }
         public void addtab(string strTabName, UserControl userControlName)
         { 
@@ -170,6 +178,12 @@ namespace Quanlybenhvien
         }
 
         private void labelX3_Click(object sender, EventArgs e)
+        {
+            Uc_Laphoadonthanhtoan ucLptthanhtoan = new Uc_Laphoadonthanhtoan();
+            addtab("Phiếu thanh toán", ucLptthanhtoan);
+        }
+
+        private void labelX4_Click(object sender, EventArgs e)
         {
             Uc_Laphoadonthanhtoan ucLptthanhtoan = new Uc_Laphoadonthanhtoan();
             addtab("Phiếu thanh toán", ucLptthanhtoan);

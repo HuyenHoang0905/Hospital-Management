@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ADL
+namespace BLL
 {
-    public class ConnecDB
+    class PhieuTT_BLL
     {
     }
 }

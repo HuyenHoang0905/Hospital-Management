@@ -31,13 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.lbltieude = new DevComponents.DotNetBar.LabelX();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.txtMatkhau = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.txtTendangnhap = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtpass = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtacount = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblThongbao = new DevComponents.DotNetBar.LabelX();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -62,8 +63,9 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.Controls.Add(this.txtMatkhau);
-            this.groupPanel1.Controls.Add(this.txtTendangnhap);
+            this.groupPanel1.Controls.Add(this.lblThongbao);
+            this.groupPanel1.Controls.Add(this.txtpass);
+            this.groupPanel1.Controls.Add(this.txtacount);
             this.groupPanel1.Controls.Add(this.labelX2);
             this.groupPanel1.Controls.Add(this.labelX1);
             this.groupPanel1.Location = new System.Drawing.Point(278, 58);
@@ -103,31 +105,36 @@
             this.groupPanel1.TabIndex = 1;
             this.groupPanel1.Text = "Thông tin";
             // 
-            // txtMatkhau
+            // txtpass
             // 
             // 
             // 
             // 
-            this.txtMatkhau.Border.Class = "TextBoxBorder";
-            this.txtMatkhau.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtMatkhau.Location = new System.Drawing.Point(126, 61);
-            this.txtMatkhau.Name = "txtMatkhau";
-            this.txtMatkhau.Size = new System.Drawing.Size(112, 20);
-            this.txtMatkhau.TabIndex = 3;
-            this.txtMatkhau.WatermarkText = "nhập vào mật khẩu";
+            this.txtpass.Border.Class = "TextBoxBorder";
+            this.txtpass.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtpass.Location = new System.Drawing.Point(126, 61);
+            this.txtpass.MaxLength = 10;
+            this.txtpass.Name = "txtpass";
+            this.txtpass.PasswordChar = '*';
+            this.txtpass.Size = new System.Drawing.Size(112, 20);
+            this.txtpass.TabIndex = 3;
+            this.txtpass.WatermarkText = "nhập vào mật khẩu";
+            this.txtpass.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.txtpass_PreviewKeyDown);
             // 
-            // txtTendangnhap
+            // txtacount
             // 
             // 
             // 
             // 
-            this.txtTendangnhap.Border.Class = "TextBoxBorder";
-            this.txtTendangnhap.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtTendangnhap.Location = new System.Drawing.Point(126, 15);
-            this.txtTendangnhap.Name = "txtTendangnhap";
-            this.txtTendangnhap.Size = new System.Drawing.Size(112, 20);
-            this.txtTendangnhap.TabIndex = 2;
-            this.txtTendangnhap.WatermarkText = "nhập vào tên tài khoản";
+            this.txtacount.Border.Class = "TextBoxBorder";
+            this.txtacount.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtacount.Location = new System.Drawing.Point(126, 15);
+            this.txtacount.MaxLength = 10;
+            this.txtacount.Name = "txtacount";
+            this.txtacount.Size = new System.Drawing.Size(112, 20);
+            this.txtacount.TabIndex = 2;
+            this.txtacount.WatermarkText = "nhập vào tên tài khoản";
+            this.txtacount.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtacount_MouseClick);
             // 
             // labelX2
             // 
@@ -191,6 +198,21 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // lblThongbao
+            // 
+            // 
+            // 
+            // 
+            this.lblThongbao.BackgroundStyle.Class = "";
+            this.lblThongbao.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblThongbao.ForeColor = System.Drawing.Color.Red;
+            this.lblThongbao.Location = new System.Drawing.Point(20, 93);
+            this.lblThongbao.Name = "lblThongbao";
+            this.lblThongbao.Size = new System.Drawing.Size(234, 23);
+            this.lblThongbao.TabIndex = 4;
+            this.lblThongbao.Text = "Bạn kiểm tra lại thông tin đăng nhập";
+            this.lblThongbao.Visible = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,11 +237,12 @@
         private DevComponents.DotNetBar.LabelX lbltieude;
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtMatkhau;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtTendangnhap;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtpass;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtacount;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private DevComponents.DotNetBar.ButtonX buttonX2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private DevComponents.DotNetBar.LabelX lblThongbao;
     }
 }

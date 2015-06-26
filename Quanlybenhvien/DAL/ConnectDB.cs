@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities
+namespace DAL
 {
-     public  class ConnectDB
-  {
+    public class ConnectDB
+    {
       public string ConnectionString;
         private SqlConnection myConnection = null;
         private SqlCommand myComand = null;
