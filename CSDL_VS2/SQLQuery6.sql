@@ -3,11 +3,11 @@ GO
 
 /****** Object:  Database [DBBenhVienYHocCoTruyen]    Script Date: 6/28/2015 2:54:17 AM ******/
 CREATE DATABASE [DBBenhVienYHocCoTruyen]
- CONTAINMENT = NONE
- ON  PRIMARY 
-( NAME = N'DBBenhVienYHocCoTruyen', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.HOANGHUYEN\MSSQL\DATA\DBBenhVienYHocCoTruyen.mdf' , SIZE = 3072KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
- LOG ON 
-( NAME = N'DBBenhVienYHocCoTruyen_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.HOANGHUYEN\MSSQL\DATA\DBBenhVienYHocCoTruyen_log.ldf' , SIZE = 3456KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
+-- CONTAINMENT = NONE
+-- ON  PRIMARY 
+--( NAME = N'DBBenhVienYHocCoTruyen', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.HOANGHUYEN\MSSQL\DATA\DBBenhVienYHocCoTruyen.mdf' , SIZE = 3072KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+-- LOG ON 
+--( NAME = N'DBBenhVienYHocCoTruyen_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.HOANGHUYEN\MSSQL\DATA\DBBenhVienYHocCoTruyen_log.ldf' , SIZE = 3456KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
 GO
 
 ALTER DATABASE [DBBenhVienYHocCoTruyen] SET COMPATIBILITY_LEVEL = 100

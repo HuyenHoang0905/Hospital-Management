@@ -1,4 +1,0 @@
-C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\ADL\bin\Debug\ADL.dll
-C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\ADL\bin\Debug\ADL.pdb
-C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\ADL\obj\Debug\ADL.dll
-C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\ADL\obj\Debug\ADL.pdb
