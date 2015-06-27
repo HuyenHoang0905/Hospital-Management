@@ -9,11 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entiti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS", "BUS\BUS.csproj", "{261C3BFF-E676-480E-B9CE-605422BCE467}"
 EndProject
-<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{71D91454-2BB3-4D99-A443-B887EEA95C68}"
-=======
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{EA77F194-A7D6-4F75-87C2-9F78650C583B}"
->>>>>>> origin/master
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +29,10 @@ Global
 		{261C3BFF-E676-480E-B9CE-605422BCE467}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{261C3BFF-E676-480E-B9CE-605422BCE467}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{261C3BFF-E676-480E-B9CE-605422BCE467}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EA77F194-A7D6-4F75-87C2-9F78650C583B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA77F194-A7D6-4F75-87C2-9F78650C583B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA77F194-A7D6-4F75-87C2-9F78650C583B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA77F194-A7D6-4F75-87C2-9F78650C583B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71D91454-2BB3-4D99-A443-B887EEA95C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71D91454-2BB3-4D99-A443-B887EEA95C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71D91454-2BB3-4D99-A443-B887EEA95C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71D91454-2BB3-4D99-A443-B887EEA95C68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
