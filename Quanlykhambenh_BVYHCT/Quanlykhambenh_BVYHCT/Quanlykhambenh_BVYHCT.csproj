@@ -44,6 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBBenhVienYHocCoTruyenDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBBenhVienYHocCoTruyenDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormCapNhatKetQua.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +141,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DBBenhVienYHocCoTruyenDataSet.xsc">
+      <DependentUpon>DBBenhVienYHocCoTruyenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBBenhVienYHocCoTruyenDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBBenhVienYHocCoTruyenDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBBenhVienYHocCoTruyenDataSet.xss">
+      <DependentUpon>DBBenhVienYHocCoTruyenDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -152,6 +168,15 @@
   <ItemGroup>
     <Content Include="Images\BungBN1.JPG" />
     <Content Include="Images\NaoBN1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{261c3bff-e676-480e-b9ce-605422bce467}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

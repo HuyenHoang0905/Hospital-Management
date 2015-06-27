@@ -6,19 +6,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ADL
+namespace DAL
 {
-  public  class ConnectDB
-  {
-      public string ConnectionString;
+    public class ConnectDB
+    {
+        public string ConnectionString = @"Data Source=BUIVANTU-PC;Initial Catalog=DBBenhVienYHocCoTruyen;Integrated Security=True";
         private SqlConnection myConnection = null;
         private SqlCommand myComand = null;
         private SqlDataAdapter myDataAdapter = null;
-        public ConnectDB(string strconn)
+        public ConnectDB()
         {
-            //myConnection = new SqlConnection(ConnectionString);
-            //OpenConnection();
-            myConnection = new SqlConnection(strconn);
+            myConnection = new SqlConnection(ConnectionString);
+            OpenConnection();
         }
         public void OpenConnection()
         {
@@ -51,6 +50,22 @@ namespace ADL
             {
                 myComand = new SqlCommand(spName, myConnection);
                 myComand.CommandType = CommandType.StoredProcedure;
+                myDataAdapter = new SqlDataAdapter(myComand);
+                myDataAdapter.Fill(myDataTable);
+                return myDataTable;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public DataTable ExecuteSelect(string spName)
+        {
+            DataTable myDataTable = new DataTable();
+            try
+            {
+                myComand = new SqlCommand(spName, myConnection);
+                myComand.CommandType = CommandType.Text;
                 myDataAdapter = new SqlDataAdapter(myComand);
                 myDataAdapter.Fill(myDataTable);
                 return myDataTable;

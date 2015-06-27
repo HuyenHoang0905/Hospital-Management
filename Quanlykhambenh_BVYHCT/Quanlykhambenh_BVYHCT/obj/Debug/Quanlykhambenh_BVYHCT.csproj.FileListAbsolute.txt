@@ -59,3 +59,7 @@ F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.csproj.GenerateResource.Cache
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.exe
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.pdb
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\BUS.dll
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\DAL.dll
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\BUS.pdb
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\DAL.pdb

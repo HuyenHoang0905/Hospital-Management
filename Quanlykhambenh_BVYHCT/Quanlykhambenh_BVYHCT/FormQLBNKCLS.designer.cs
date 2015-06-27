@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLBNKCLS));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGVBenhNhan = new System.Windows.Forms.DataGridView();
             this.BTCapNhatKQ = new System.Windows.Forms.Button();
             this.BTThemPhieuCLS = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -60,41 +58,33 @@
             this.button2 = new System.Windows.Forms.Button();
             this.BTXemKQ = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVBenhNhan)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // DGVBenhNhan
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DGVBenhNhan.AllowUserToAddRows = false;
+            this.DGVBenhNhan.AllowUserToDeleteRows = false;
+            this.DGVBenhNhan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVBenhNhan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaBN,
-            this.TenBN});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 81);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(249, 401);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // MaBN
-            // 
-            this.MaBN.HeaderText = "Mã bệnh nhân";
-            this.MaBN.Name = "MaBN";
-            this.MaBN.ReadOnly = true;
-            // 
-            // TenBN
-            // 
-            this.TenBN.HeaderText = "Tên bệnh nhân";
-            this.TenBN.Name = "TenBN";
-            this.TenBN.ReadOnly = true;
+            this.TenBN,
+            this.Column});
+            this.DGVBenhNhan.Location = new System.Drawing.Point(12, 81);
+            this.DGVBenhNhan.Name = "DGVBenhNhan";
+            this.DGVBenhNhan.ReadOnly = true;
+            this.DGVBenhNhan.Size = new System.Drawing.Size(301, 401);
+            this.DGVBenhNhan.TabIndex = 0;
             // 
             // BTCapNhatKQ
             // 
             this.BTCapNhatKQ.Image = ((System.Drawing.Image)(resources.GetObject("BTCapNhatKQ.Image")));
-            this.BTCapNhatKQ.Location = new System.Drawing.Point(267, 265);
+            this.BTCapNhatKQ.Location = new System.Drawing.Point(319, 261);
             this.BTCapNhatKQ.Name = "BTCapNhatKQ";
             this.BTCapNhatKQ.Size = new System.Drawing.Size(91, 51);
             this.BTCapNhatKQ.TabIndex = 3;
@@ -106,7 +96,7 @@
             // BTThemPhieuCLS
             // 
             this.BTThemPhieuCLS.Image = ((System.Drawing.Image)(resources.GetObject("BTThemPhieuCLS.Image")));
-            this.BTThemPhieuCLS.Location = new System.Drawing.Point(267, 211);
+            this.BTThemPhieuCLS.Location = new System.Drawing.Point(319, 207);
             this.BTThemPhieuCLS.Name = "BTThemPhieuCLS";
             this.BTThemPhieuCLS.Size = new System.Drawing.Size(91, 44);
             this.BTThemPhieuCLS.TabIndex = 4;
@@ -167,9 +157,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(364, 40);
+            this.groupBox1.Location = new System.Drawing.Point(416, 40);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(553, 426);
+            this.groupBox1.Size = new System.Drawing.Size(501, 426);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin bệnh nhân";
@@ -359,7 +349,7 @@
             // BTXemKQ
             // 
             this.BTXemKQ.Image = ((System.Drawing.Image)(resources.GetObject("BTXemKQ.Image")));
-            this.BTXemKQ.Location = new System.Drawing.Point(267, 326);
+            this.BTXemKQ.Location = new System.Drawing.Point(319, 322);
             this.BTXemKQ.Name = "BTXemKQ";
             this.BTXemKQ.Size = new System.Drawing.Size(91, 44);
             this.BTXemKQ.TabIndex = 12;
@@ -371,13 +361,34 @@
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(267, 136);
+            this.button1.Location = new System.Drawing.Point(319, 132);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 52);
             this.button1.TabIndex = 13;
             this.button1.Text = "Chuyển kết quả";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // MaBN
+            // 
+            this.MaBN.DataPropertyName = "MaBenhNhan";
+            this.MaBN.HeaderText = "Mã bệnh nhân";
+            this.MaBN.Name = "MaBN";
+            this.MaBN.ReadOnly = true;
+            // 
+            // TenBN
+            // 
+            this.TenBN.DataPropertyName = "TenBN";
+            this.TenBN.HeaderText = "Tên bệnh nhân";
+            this.TenBN.Name = "TenBN";
+            this.TenBN.ReadOnly = true;
+            // 
+            // Column
+            // 
+            this.Column.DataPropertyName = "TrangThaiThanhToan";
+            this.Column.HeaderText = "Thu tiền";
+            this.Column.Name = "Column";
+            this.Column.ReadOnly = true;
             // 
             // FormQLBNKCLS
             // 
@@ -392,13 +403,14 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BTThemPhieuCLS);
             this.Controls.Add(this.BTCapNhatKQ);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DGVBenhNhan);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormQLBNKCLS";
             this.Text = "Quản lý bệnh nhân khoa khám cận lâm sàng";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FormQLBNKCLS_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DGVBenhNhan)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -410,9 +422,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaBN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenBN;
+        private System.Windows.Forms.DataGridView DGVBenhNhan;
         private System.Windows.Forms.Button BTCapNhatKQ;
         private System.Windows.Forms.Button BTThemPhieuCLS;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -441,6 +451,9 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button BTXemKQ;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column;
     }
 }
 
