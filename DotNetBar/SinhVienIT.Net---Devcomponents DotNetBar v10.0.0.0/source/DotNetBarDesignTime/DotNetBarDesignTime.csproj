@@ -1,0 +1,394 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDA04B2C-CE5A-4264-8266-EF8ED4A6837D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevComponents.DotNetBar.Design</RootNamespace>
+    <AssemblyName>DevComponents.DotNetBar.Design</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>DotNetBarDesignTime.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DOTNETBAR; FRAMEWORK20</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;DOTNETBAR;FRAMEWORK20</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial2005Design|AnyCPU' ">
+    <OutputPath>bin\ReleaseTrial2005Design\</OutputPath>
+    <DefineConstants>TRACE;TRIAL;DOTNETBAR;FRAMEWORK20</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvTree.Design\CellCollectionEditor.cs" />
+    <Compile Include="AdvTree.Design\HostedItemTypeEditor.cs" />
+    <Compile Include="AdvTree.Design\ImageIndexEditor.cs" />
+    <Compile Include="AdvTree.Design\NodeCollectionEditor.cs" />
+    <Compile Include="ApplicationButtonDesigner.cs" />
+    <Compile Include="BarBaseControlDesigner.cs" />
+    <Compile Include="BarDesigner.cs" />
+    <Compile Include="BaseItemDesigner.cs" />
+    <Compile Include="BubbleBarDesigner.cs" />
+    <Compile Include="BubbleBarTabCollectionEditor.cs" />
+    <Compile Include="BubbleBarTabDesigner.cs" />
+    <Compile Include="BubbleButtonCollectionEditor.cs" />
+    <Compile Include="ButtonItemEditor.cs" />
+    <Compile Include="ButtonXDesigner.cs" />
+    <Compile Include="CheckBoxItemDesigner.cs" />
+    <Compile Include="CheckBoxXDesigner.cs" />
+    <Compile Include="ColorPickerButtonDesigner.cs" />
+    <Compile Include="ColorSchemeColorConverter.cs" />
+    <Compile Include="ColumnHeaderCollectionEditor.cs" />
+    <Compile Include="ComboBoxExDesigner.cs" />
+    <Compile Include="ComboItemsEditor.cs" />
+    <Compile Include="ComboTreeActionList.cs" />
+    <Compile Include="ComboTreeDesigner.cs" />
+    <Compile Include="ContextMenuBarDesigner.cs" />
+    <Compile Include="CrumbBarDesigner.cs" />
+    <Compile Include="CrumbBarItemCollectionEditor.cs" />
+    <Compile Include="CrumbBarItemDesigner.cs" />
+    <Compile Include="CrumbBarItemsEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomTypeEditorProvider.cs" />
+    <Compile Include="DateNavigatorDesigner.cs" />
+    <Compile Include="AdvTree.Design\AdvTreeActionList.cs" />
+    <Compile Include="AdvTree.Design\AdvTreeDesigner.cs" />
+    <Compile Include="AdvTree.Design\ColumnHeaderDesigner.cs" />
+    <Compile Include="AdvTree.Design\ElementStyleTypeEditor.cs" />
+    <Compile Include="AdvTree.Design\NodeConnectorTypeEditor.cs" />
+    <Compile Include="AdvTree.Design\NodeContextMenuTypeEditor.cs" />
+    <Compile Include="AdvTree.Design\NodeDesigner.cs" />
+    <Compile Include="DesignerSupport.cs" />
+    <Compile Include="DockContainerItemDesigner.cs" />
+    <Compile Include="DockSiteDesigner.cs" />
+    <Compile Include="DotNetBarManagerDesigner.cs" />
+    <Compile Include="Editors.Design\DateTimeInputDesigner.cs" />
+    <Compile Include="Editors.Design\IpAddressInputDesigner.cs" />
+    <Compile Include="Editors.Design\MonthCalendarAdvDesigner.cs" />
+    <Compile Include="Editors.Design\NumericInputBaseDesigner.cs" />
+    <Compile Include="Editors.Design\VisualControlBaseDesigner.cs" />
+    <Compile Include="ElementStyleClassTypeEditor.cs" />
+    <Compile Include="ElementStyleCollectionEditor.cs" />
+    <Compile Include="ExpandablePanelDesigner.cs" />
+    <Compile Include="ExpandableSplitterDesigner.cs" />
+    <Compile Include="ExplorerBarDesigner.cs" />
+    <Compile Include="ExplorerBarGroupItemDesigner.cs" />
+    <Compile Include="ExplorerBarGroupItemEditor.cs" />
+    <Compile Include="ExplorerBarPanelsEditor.cs" />
+    <Compile Include="GalleryContainerDesigner.cs" />
+    <Compile Include="GalleryGroupCollectionEditor.cs" />
+    <Compile Include="GalleryGroupConverter.cs" />
+    <Compile Include="GalleryGroupTypeEditor.cs" />
+    <Compile Include="GroupPanelDesigner.cs" />
+    <Compile Include="Helpers.cs" />
+    <Compile Include="ItemContainerDesigner.cs" />
+    <Compile Include="ItemPanelDesigner.cs" />
+    <Compile Include="LabelXDesigner.cs" />
+    <Compile Include="MaskedTextBoxAdvDesigner.cs" />
+    <Compile Include="MicroChartDesigner.cs" />
+    <Compile Include="MicroChartItemDesigner.cs" />
+    <Compile Include="NavigationBarDesigner.cs" />
+    <Compile Include="NavigationPaneDesigner.cs" />
+    <Compile Include="NavigationPanePanelDesigner.cs" />
+    <Compile Include="PanelControlDesigner.cs" />
+    <Compile Include="PanelDockContainerDesigner.cs" />
+    <Compile Include="PanelExDesigner.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RatingItemDesigner.cs" />
+    <Compile Include="ReflectionImageDesigner.cs" />
+    <Compile Include="ReflectionLabelDesigner.cs" />
+    <Compile Include="RibbonBarDesigner.cs" />
+    <Compile Include="RibbonBarMergeContainerDesigner.cs" />
+    <Compile Include="RibbonClientPanelDesigner.cs" />
+    <Compile Include="RibbonControlDesigner.cs" />
+    <Compile Include="RibbonPanelDesigner.cs" />
+    <Compile Include="RibbonTabItemDesigner.cs" />
+    <Compile Include="RibbonTabItemGroupCollectionEditor.cs" />
+    <Compile Include="RibbonTabItemGroupConverter.cs" />
+    <Compile Include="RibbonTabItemGroupTypeEditor.cs" />
+    <Compile Include="Schedule.Design\CalendarViewDesigner.cs" />
+    <Compile Include="ShapeEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShapeEditorForm.Designer.cs">
+      <DependentUpon>ShapeEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShapeTypeEditor.cs" />
+    <Compile Include="ShortcutsDesigner.cs" />
+    <Compile Include="SideBarColorSchemePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SideBarDesigner.cs" />
+    <Compile Include="SideBarPanelItemDesigner.cs" />
+    <Compile Include="SideBarPanelItemEditor.cs" />
+    <Compile Include="SideBarPanelsEditor.cs" />
+    <Compile Include="SimpleBaseItemDesigner.cs" />
+    <Compile Include="SimpleItemDesigner.cs" />
+    <Compile Include="SliderDesigner.cs" />
+    <Compile Include="SuperTabControl.Design\SuperTabControlDesigner.cs" />
+    <Compile Include="SuperTabControl.Design\SuperTabControlPanelDesigner.cs" />
+    <Compile Include="SuperTabControl.Design\SuperTabControlTabsEditor.cs" />
+    <Compile Include="SuperTabControl.Design\SuperTabItemColorTableEditor.cs" />
+    <Compile Include="SuperTabControl.Design\SuperTabItemDesigner.cs" />
+    <Compile Include="SuperTabControl.Design\SuperTabStripDesigner.cs" />
+    <Compile Include="SuperTabControl.Design\SuperTabStripTabsEditor.cs" />
+    <Compile Include="SuperTooltipDesigner.cs" />
+    <Compile Include="SuperTooltipInfoConverter.cs" />
+    <Compile Include="SuperTooltipInfoEditor.cs" />
+    <Compile Include="SuperTooltipVisualEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SwitchButtonDesigner.cs" />
+    <Compile Include="TabControlDesigner.cs" />
+    <Compile Include="TabControlPanelDesigner.cs" />
+    <Compile Include="TabItemDesigner.cs" />
+    <Compile Include="TabStripDesigner.cs" />
+    <Compile Include="TabStripTabsEditor.cs" />
+    <Compile Include="TextBoxDropDownDesigner.cs" />
+    <Compile Include="TextBoxItemDesigner.cs" />
+    <Compile Include="TextBoxXDesigner.cs" />
+    <Compile Include="TextMarkupEditor.cs">
+    </Compile>
+    <Compile Include="TextMarkupUIEditor.cs" />
+    <Compile Include="TimeZoneSelectionEditor.cs" />
+    <Compile Include="Validator.Design\HighlighterDesigner.cs" />
+    <Compile Include="Validator.Design\RequiredFieldValidatorConverter.cs" />
+    <Compile Include="Validator.Design\SuperValidatorDesigner.cs" />
+    <Compile Include="Validator.Design\ValidationExpressionEditor.cs" />
+    <Compile Include="Validator.Design\ValidatorEditor.cs" />
+    <Compile Include="WarningBoxDesigner.cs" />
+    <Compile Include="WinApi.cs" />
+    <Compile Include="WizardDesigner.cs" />
+    <Compile Include="WizardPageDesigner.cs" />
+    <Compile Include="WizardPageNavigationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WizardPageOrderDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DotNetBarDesignTime.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SuperTooltipVisualEditor.resx">
+      <DependentUpon>SuperTooltipVisualEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\AddMoreItemsContainer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankOffice2010HotSilver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankOffice2010NormalSilver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankOffice2010PressedSilver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankStartButtonHot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankStartButtonHotBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankStartButtonHotSilver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankStartButtonHotVistaBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankStartButtonNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankStartButtonNormalBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankStartButtonNormalSilver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankStartButtonNormalVistaBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankStartButtonPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankStartButtonPressedBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankStartButtonPressedSilver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankStartButtonPressedVistaBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankWin7HotBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankWin7NormalBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\BlankWin7PressedBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\Category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\CloseButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\CollapseTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\ColorPickerButtonImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\ColorPickerCustomColors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\DateReset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\DefaultNavBarImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\DockHintAllSides.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\DockHintBottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\DockHintLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\DockHintRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\DockHintTab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\DockHintTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\ErrorIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\ExpandTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\FreeText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\GreenLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\ImagePlaceHolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\ImagePlaceHolder16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\NavBarConfigure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\NavBarShowLess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\NavBarShowMore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\Note24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\Note64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\Pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\PinInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\PinPushed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\PinPushedInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\QatCustomizeItemCombo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\Rating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\RibbonOverflow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SystemImages\Sort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ShapeEditorForm.resx">
+      <DependentUpon>ShapeEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SideBarColorSchemePicker.resx">
+      <DependentUpon>SideBarColorSchemePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemImages\WizardHeaderImage.png" />
+    <EmbeddedResource Include="TextMarkupEditor.resx">
+      <DependentUpon>TextMarkupEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WizardPageOrderDialog.resx">
+      <DependentUpon>WizardPageOrderDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetBarBuild.csproj">
+      <Project>{36546CE3-335C-4AB6-A2F3-40F8C818BC66}</Project>
+      <Name>DotNetBarBuild</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

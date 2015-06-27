@@ -1,0 +1,35 @@
+<VSTemplate Version="2.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Ribbon Form</Name>
+    <Description>DotNetBar Ribbon Form</Description>
+    <Icon Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" ID="4535" />
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>41</SortOrder>
+    <DefaultName>RibbonForm.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+		<References>
+			<Reference>
+				<Assembly>System</Assembly>
+			</Reference>
+			<Reference>
+				<Assembly>System.Data</Assembly>
+			</Reference>
+			<Reference>
+				<Assembly>System.Drawing</Assembly>
+			</Reference>
+			<Reference>
+				<Assembly>System.Windows.Forms</Assembly>
+			</Reference>
+			<Reference>
+				<Assembly>System.Xml</Assembly>
+			</Reference>
+			<Reference>
+				<Assembly>DevComponents.DotNetBar2</Assembly>
+			</Reference>
+		</References>
+
+    <ProjectItem ReplaceParameters="true" SubType="Form">Form.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true">Form.Designer.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

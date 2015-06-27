@@ -1,0 +1,9 @@
+C:\Products\DotNetBarBuild\SourceCode\trunk\TreeGX\bin\Release\DevComponents.TreeGX.dll
+C:\Products\DotNetBarBuild\SourceCode\trunk\TreeGX\bin\Release\DevComponents.TreeGX.xml
+C:\Products\DotNetBarBuild\SourceCode\trunk\TreeGX\obj\Release\ResolveAssemblyReference.cache
+C:\Products\DotNetBarBuild\SourceCode\trunk\TreeGX\obj\Release\DevComponents.Tree.TreeGX.ico
+C:\Products\DotNetBarBuild\SourceCode\trunk\TreeGX\obj\Release\DevComponents.UI.ColorPicker.resources
+C:\Products\DotNetBarBuild\SourceCode\trunk\TreeGX\obj\Release\DevComponents.Tree.Design.ComponentNotLicensed.resources
+C:\Products\DotNetBarBuild\SourceCode\trunk\TreeGX\obj\Release\DevComponents.Tree.TreeGXRootSelector.resources
+C:\Products\DotNetBarBuild\SourceCode\trunk\TreeGX\obj\Release\TreeGX.csproj.GenerateResource.Cache
+C:\Products\DotNetBarBuild\SourceCode\trunk\TreeGX\obj\Release\DevComponents.TreeGX.dll

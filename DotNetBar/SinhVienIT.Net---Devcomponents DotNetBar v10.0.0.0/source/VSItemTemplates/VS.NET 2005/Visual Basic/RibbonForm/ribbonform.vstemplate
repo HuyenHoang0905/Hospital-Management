@@ -1,0 +1,33 @@
+<VSTemplate Version="2.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Ribbon Form</Name>
+    <Description>DotNetBar Ribbon Form</Description>
+    <Icon Package="{164B10B9-B200-11D0-8C61-00A0C91E29D5}" ID="4527" />
+    <ProjectType>VisualBasic</ProjectType>
+    <SortOrder>11</SortOrder>
+    <DefaultName>Form.vb</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+        <References>
+            <Reference>
+                <Assembly>System</Assembly>
+                <URL>http://www.microsoft.com</URL>
+            </Reference>
+            <Reference>
+                <Assembly>System.Drawing</Assembly>
+                <URL>http://www.microsoft.com</URL>
+            </Reference>
+            <Reference>
+                <Assembly>System.Windows.Forms</Assembly>
+                <URL>http://www.microsoft.com</URL>
+            </Reference>
+			<Reference>
+                <Assembly>DevComponents.DotNetBar2</Assembly>
+                <URL>http://www.devcomponents.com</URL>
+            </Reference>
+        </References>
+
+    <ProjectItem ReplaceParameters="true" SubType="Form">Form.vb</ProjectItem>
+    <ProjectItem ReplaceParameters="true">Form.Designer.vb</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
