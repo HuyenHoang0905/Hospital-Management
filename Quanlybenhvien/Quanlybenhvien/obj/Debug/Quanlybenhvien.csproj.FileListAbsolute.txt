@@ -1,0 +1,36 @@
+C:\Users\PC\Desktop\Quanlybenhvien\Quanlybenhvien\bin\Debug\Quanlybenhvien.exe.config
+C:\Users\PC\Desktop\Quanlybenhvien\Quanlybenhvien\bin\Debug\Quanlybenhvien.exe
+C:\Users\PC\Desktop\Quanlybenhvien\Quanlybenhvien\bin\Debug\Quanlybenhvien.pdb
+C:\Users\PC\Desktop\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.Properties.Resources.resources
+C:\Users\PC\Desktop\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.Uc_gioithieu.resources
+C:\Users\PC\Desktop\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.csproj.GenerateResource.Cache
+C:\Users\PC\Desktop\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.exe
+C:\Users\PC\Desktop\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.pdb
+C:\Users\PC\Desktop\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.frmLogin.resources
+C:\Users\PC\Desktop\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.frmQuanly.resources
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.dangnhap.resources
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.formmain.resources
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.frmQuanly.resources
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.frmLogin.resources
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.Properties.Resources.resources
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.UcDanhsachbenhnha.resources
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.UcDanhsachhoadon.resources
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.Uc_Laphoadonthanhtoan.resources
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.Uc_lapphieutamthu.resources
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.Uc_qlptt.resources
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.csproj.GenerateResource.Cache
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\bin\Debug\Quanlybenhvien.exe.config
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\bin\Debug\Quanlybenhvien.exe
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\bin\Debug\Quanlybenhvien.pdb
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\bin\Debug\BUS.dll
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\bin\Debug\Entities.dll
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\bin\Debug\DAL.dll
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\bin\Debug\BUS.pdb
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\bin\Debug\Entities.pdb
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\bin\Debug\DAL.pdb
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.exe
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.pdb
+C:\Users\PC\Desktop\Thực tập công nghệ thông tin\Hospital-Management\Quanlybenhvien\Quanlybenhvien\bin\Debug\Quanlybenhvien.exe.config
+C:\Users\PC\Desktop\Thực tập công nghệ thông tin\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.exe
+C:\Users\PC\Desktop\Thực tập công nghệ thông tin\Hospital-Management\Quanlybenhvien\Quanlybenhvien\obj\Debug\Quanlybenhvien.pdb

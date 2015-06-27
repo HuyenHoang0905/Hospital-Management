@@ -104,11 +104,13 @@
             // BTChonFile
             // 
             this.BTChonFile.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BTChonFile.Location = new System.Drawing.Point(602, 76);
+            this.BTChonFile.Image = ((System.Drawing.Image)(resources.GetObject("BTChonFile.Image")));
+            this.BTChonFile.Location = new System.Drawing.Point(619, 67);
             this.BTChonFile.Name = "BTChonFile";
-            this.BTChonFile.Size = new System.Drawing.Size(75, 23);
+            this.BTChonFile.Size = new System.Drawing.Size(101, 41);
             this.BTChonFile.TabIndex = 34;
             this.BTChonFile.Text = "Chọn file";
+            this.BTChonFile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTChonFile.UseVisualStyleBackColor = true;
             this.BTChonFile.Click += new System.EventHandler(this.BTChonFile_Click);
             // 
@@ -142,6 +144,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCapNhatKetQua";
             this.Text = "FormCapNhatKetQua";
             this.Load += new System.EventHandler(this.FormCapNhatKetQua_Load);

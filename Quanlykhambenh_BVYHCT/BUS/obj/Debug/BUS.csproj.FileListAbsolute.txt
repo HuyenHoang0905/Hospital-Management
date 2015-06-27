@@ -1,0 +1,4 @@
+C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\bin\Debug\BUS.dll
+C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\bin\Debug\BUS.pdb
+C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\obj\Debug\BUS.dll
+C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\obj\Debug\BUS.pdb

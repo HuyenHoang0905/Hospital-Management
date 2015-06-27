@@ -16,5 +16,10 @@ namespace Quanlykhambenh_BVYHCT
         {
             InitializeComponent();
         }
+
+        private void FormNhapThuoc_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

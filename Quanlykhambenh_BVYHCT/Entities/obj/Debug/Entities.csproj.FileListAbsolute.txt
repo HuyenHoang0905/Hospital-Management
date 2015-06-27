@@ -3,3 +3,7 @@ C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Entities\bi
 C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
 C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Entities\obj\Debug\Entities.dll
 C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Entities\obj\Debug\Entities.pdb
+C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Entities\bin\Debug\Entities.dll
+C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Entities\bin\Debug\Entities.pdb
+C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Entities\obj\Debug\Entities.dll
+C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Entities\obj\Debug\Entities.pdb

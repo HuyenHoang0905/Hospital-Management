@@ -1,0 +1,9 @@
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\BUS\bin\Debug\BUS.dll
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\BUS\bin\Debug\BUS.pdb
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\BUS\bin\Debug\DAL.dll
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\BUS\bin\Debug\Entities.dll
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\BUS\bin\Debug\DAL.pdb
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\BUS\bin\Debug\Entities.pdb
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\BUS\obj\Debug\BUS.dll
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\BUS\obj\Debug\BUS.pdb

@@ -1,0 +1,10 @@
+C:\Users\PC\Desktop\Quanlybenhvien\BLL\bin\Debug\BLL.dll
+C:\Users\PC\Desktop\Quanlybenhvien\BLL\bin\Debug\BLL.pdb
+C:\Users\PC\Desktop\Quanlybenhvien\BLL\obj\Debug\BLL.dll
+C:\Users\PC\Desktop\Quanlybenhvien\BLL\obj\Debug\BLL.pdb
+C:\Users\PC\Desktop\Quanlybenhvien\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\BLL\bin\Debug\BLL.dll
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\BLL\bin\Debug\BLL.pdb
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\BLL\obj\Debug\BLL.dll
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\BLL\obj\Debug\BLL.pdb
+C:\Users\PC\Desktop\TTCNTT\Hospital-Management\Quanlybenhvien\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
