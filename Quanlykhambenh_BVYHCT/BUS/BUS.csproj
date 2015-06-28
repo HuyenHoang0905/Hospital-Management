@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUSBenhNhanChoKhamCLS.cs" />
+    <Compile Include="BUSDanhMucKhamCLS.cs" />
+    <Compile Include="BUSNguoiDung.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

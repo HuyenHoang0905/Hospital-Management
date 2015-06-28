@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data;
 using System.Data.SqlClient;
 using BUS;
+using Entities;
 
 namespace Quanlykhambenh_BVYHCT
 {
@@ -22,6 +23,7 @@ namespace Quanlykhambenh_BVYHCT
             BusBNChoKhamCLS = new BUSBenhNhanChoKhamCLS();
             DataTable dt = new System.Data.DataTable();
             dt = BusBNChoKhamCLS.GetBenhNhan();
+            dt = this.ConvertGioiTinh(dt);
             DGVBenhNhan.DataSource = dt;
         }
 
@@ -32,8 +34,14 @@ namespace Quanlykhambenh_BVYHCT
 
         private void BTThemPhieuCLS_Click(object sender, EventArgs e)
         {
-            FormThemPhieuKham formThemPhieuKham = new FormThemPhieuKham();
-            formThemPhieuKham.Show();
+            if (TXTMaBN.Text != "")
+            {
+                FormThemPhieuKham formThemPhieuKham = new FormThemPhieuKham();
+                formThemPhieuKham.Show();
+            }
+            else {
+                MessageBox.Show("Vui lòng chọn 1 bệnh nhân để thêm hồ sơ bệnh án cho bệnh nhân đó!");
+            }
         }
 
         private void BTCapNhatKQ_Click(object sender, EventArgs e)
@@ -69,7 +77,8 @@ namespace Quanlykhambenh_BVYHCT
             TXTMaBN.Text = dt.Rows[0][0].ToString();
             TXTMaHoSoBenhAn.Text = dt.Rows[0][1].ToString();
             TXTTenBN.Text = dt.Rows[0][2].ToString();
-            TXTNgaySinh.Text = dt.Rows[0][3].ToString();
+            DateTime dtNgaySinh = Convert.ToDateTime(dt.Rows[0][3].ToString());
+            TXTNgaySinh.Text = dtNgaySinh.ToShortDateString();
             TXTDiaChi.Text = dt.Rows[0][4].ToString();
             TXTNoiLamViec.Text = dt.Rows[0][5].ToString();
             String gioiTinh = dt.Rows[0][6].ToString();
@@ -78,6 +87,10 @@ namespace Quanlykhambenh_BVYHCT
             else
                 TXTGioiTinh.Text = "Nữ";
             TXTLyDoKham.Text = dt.Rows[0][7].ToString();
+            DataTable dt1 = new DataTable();
+            dt1 = BusBNChoKhamCLS.SearchBenhNhanID(dt.Rows[0][0].ToString());
+            ClassVariableStatic.bnChoKhamCLS.MaBenhNhan = dt1.Rows[0][0].ToString();
+            ClassVariableStatic.bnChoKhamCLS.MaBSYeuCau = dt1.Rows[0][3].ToString();
         }
 
         private void BtTimKiem_Click(object sender, EventArgs e)
@@ -88,10 +101,28 @@ namespace Quanlykhambenh_BVYHCT
         }
         public DataTable ConvertGioiTinh(DataTable dt)
         {
-            DataTable tmp = new DataTable();
-            tmp = dt;
-            for (int i = 0; i < tmp.Rows.Count;i++ )
-                return tmp;
+            //clone datatable     
+            DataTable dtCloned = dt.Clone();
+            //change data type of column
+            dtCloned.Columns[2].DataType = typeof(String);
+            //import row to cloned datatable
+            foreach (DataRow row in dt.Rows)
+            {
+                dtCloned.ImportRow(row);
+            }
+            for (int i = 0; i < dtCloned.Rows.Count; i++)
+            {
+                if (dtCloned.Rows[i][2].ToString() == "True")
+                {
+                    dtCloned.Rows[i][2] = "Đã thu";
+                }
+                else
+                {
+                    dtCloned.Rows[i][2] = "Chưa thu";
+
+                }
+            }
+            return dtCloned;
         }
     }
 }

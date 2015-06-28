@@ -35,7 +35,7 @@ namespace DAL
         public DataTable SearchBenhNhanID(String MaBN)
         {
             String query = @"SELECT [TblChoKhamCLS].MaBenhNhan, TenBN,"
-                + @" TrangThaiThanhToan From [TblChoKhamCLS] "
+                + @" TrangThaiThanhToan, MaBSYeuCau From [TblChoKhamCLS] "
                 + @"inner join TblBenhNhan on [TblChoKhamCLS].MaBenhNhan=[TblBenhNhan].MaBenhNhan"
                 + @" Where [TblChoKhamCLS].MaBenhNhan='" + MaBN + "'";
             DataTable dt = new DataTable();
