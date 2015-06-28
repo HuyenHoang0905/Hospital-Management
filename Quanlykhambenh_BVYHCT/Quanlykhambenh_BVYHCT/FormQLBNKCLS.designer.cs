@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLBNKCLS));
             this.DGVBenhNhan = new System.Windows.Forms.DataGridView();
+            this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BTCapNhatKQ = new System.Windows.Forms.Button();
             this.BTThemPhieuCLS = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -37,14 +40,14 @@
             this.quảnLýVậtTưYTếToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lậpBáoCáoThốngKêkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TXTLyDoKham = new System.Windows.Forms.TextBox();
+            this.TXTGioiTinh = new System.Windows.Forms.TextBox();
+            this.TXTNoiLamViec = new System.Windows.Forms.TextBox();
+            this.TXTDiaChi = new System.Windows.Forms.TextBox();
+            this.TXTNgaySinh = new System.Windows.Forms.TextBox();
+            this.TXTTenBN = new System.Windows.Forms.TextBox();
+            this.TXTMaHoSoBenhAn = new System.Windows.Forms.TextBox();
+            this.TXTMaBN = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -53,14 +56,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.TXTSearch = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtTimKiem = new System.Windows.Forms.Button();
             this.BTXemKQ = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DGVBenhNhan)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -80,6 +80,28 @@
             this.DGVBenhNhan.ReadOnly = true;
             this.DGVBenhNhan.Size = new System.Drawing.Size(301, 401);
             this.DGVBenhNhan.TabIndex = 0;
+            this.DGVBenhNhan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVBenhNhan_CellClick);
+            // 
+            // MaBN
+            // 
+            this.MaBN.DataPropertyName = "MaBenhNhan";
+            this.MaBN.HeaderText = "Mã bệnh nhân";
+            this.MaBN.Name = "MaBN";
+            this.MaBN.ReadOnly = true;
+            // 
+            // TenBN
+            // 
+            this.TenBN.DataPropertyName = "TenBN";
+            this.TenBN.HeaderText = "Tên bệnh nhân";
+            this.TenBN.Name = "TenBN";
+            this.TenBN.ReadOnly = true;
+            // 
+            // Column
+            // 
+            this.Column.DataPropertyName = "TrangThaiThanhToan";
+            this.Column.HeaderText = "Thu tiền";
+            this.Column.Name = "Column";
+            this.Column.ReadOnly = true;
             // 
             // BTCapNhatKQ
             // 
@@ -140,14 +162,14 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.TXTLyDoKham);
+            this.groupBox1.Controls.Add(this.TXTGioiTinh);
+            this.groupBox1.Controls.Add(this.TXTNoiLamViec);
+            this.groupBox1.Controls.Add(this.TXTDiaChi);
+            this.groupBox1.Controls.Add(this.TXTNgaySinh);
+            this.groupBox1.Controls.Add(this.TXTTenBN);
+            this.groupBox1.Controls.Add(this.TXTMaHoSoBenhAn);
+            this.groupBox1.Controls.Add(this.TXTMaBN);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
@@ -164,77 +186,77 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin bệnh nhân";
             // 
-            // textBox8
+            // TXTLyDoKham
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(251, 330);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(234, 20);
-            this.textBox8.TabIndex = 15;
+            this.TXTLyDoKham.Enabled = false;
+            this.TXTLyDoKham.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTLyDoKham.Location = new System.Drawing.Point(251, 330);
+            this.TXTLyDoKham.Name = "TXTLyDoKham";
+            this.TXTLyDoKham.Size = new System.Drawing.Size(234, 20);
+            this.TXTLyDoKham.TabIndex = 15;
             // 
-            // textBox7
+            // TXTGioiTinh
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(251, 288);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(234, 20);
-            this.textBox7.TabIndex = 14;
+            this.TXTGioiTinh.Enabled = false;
+            this.TXTGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTGioiTinh.Location = new System.Drawing.Point(251, 288);
+            this.TXTGioiTinh.Name = "TXTGioiTinh";
+            this.TXTGioiTinh.Size = new System.Drawing.Size(234, 20);
+            this.TXTGioiTinh.TabIndex = 14;
             // 
-            // textBox6
+            // TXTNoiLamViec
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(251, 246);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(234, 20);
-            this.textBox6.TabIndex = 13;
+            this.TXTNoiLamViec.Enabled = false;
+            this.TXTNoiLamViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTNoiLamViec.Location = new System.Drawing.Point(251, 246);
+            this.TXTNoiLamViec.Name = "TXTNoiLamViec";
+            this.TXTNoiLamViec.Size = new System.Drawing.Size(234, 20);
+            this.TXTNoiLamViec.TabIndex = 13;
             // 
-            // textBox5
+            // TXTDiaChi
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(251, 204);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(234, 20);
-            this.textBox5.TabIndex = 12;
+            this.TXTDiaChi.Enabled = false;
+            this.TXTDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTDiaChi.Location = new System.Drawing.Point(251, 204);
+            this.TXTDiaChi.Name = "TXTDiaChi";
+            this.TXTDiaChi.Size = new System.Drawing.Size(234, 20);
+            this.TXTDiaChi.TabIndex = 12;
             // 
-            // textBox4
+            // TXTNgaySinh
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(251, 162);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(234, 20);
-            this.textBox4.TabIndex = 11;
+            this.TXTNgaySinh.Enabled = false;
+            this.TXTNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTNgaySinh.Location = new System.Drawing.Point(251, 162);
+            this.TXTNgaySinh.Name = "TXTNgaySinh";
+            this.TXTNgaySinh.Size = new System.Drawing.Size(234, 20);
+            this.TXTNgaySinh.TabIndex = 11;
             // 
-            // textBox3
+            // TXTTenBN
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(251, 120);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(234, 20);
-            this.textBox3.TabIndex = 10;
+            this.TXTTenBN.Enabled = false;
+            this.TXTTenBN.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTTenBN.Location = new System.Drawing.Point(251, 120);
+            this.TXTTenBN.Name = "TXTTenBN";
+            this.TXTTenBN.Size = new System.Drawing.Size(234, 20);
+            this.TXTTenBN.TabIndex = 10;
             // 
-            // textBox2
+            // TXTMaHoSoBenhAn
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(251, 78);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(234, 20);
-            this.textBox2.TabIndex = 9;
+            this.TXTMaHoSoBenhAn.Enabled = false;
+            this.TXTMaHoSoBenhAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTMaHoSoBenhAn.Location = new System.Drawing.Point(251, 78);
+            this.TXTMaHoSoBenhAn.Name = "TXTMaHoSoBenhAn";
+            this.TXTMaHoSoBenhAn.Size = new System.Drawing.Size(234, 20);
+            this.TXTMaHoSoBenhAn.TabIndex = 9;
             // 
-            // textBox1
+            // TXTMaBN
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(251, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(234, 20);
-            this.textBox1.TabIndex = 8;
+            this.TXTMaBN.Enabled = false;
+            this.TXTMaBN.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTMaBN.Location = new System.Drawing.Point(251, 36);
+            this.TXTMaBN.Name = "TXTMaBN";
+            this.TXTMaBN.Size = new System.Drawing.Size(234, 20);
+            this.TXTMaBN.TabIndex = 8;
             // 
             // label8
             // 
@@ -316,14 +338,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã bệnh nhân: ";
             // 
-            // textBox9
+            // TXTSearch
             // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(108, 37);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(153, 20);
-            this.textBox9.TabIndex = 10;
+            this.TXTSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTSearch.Location = new System.Drawing.Point(108, 37);
+            this.TXTSearch.Name = "TXTSearch";
+            this.TXTSearch.Size = new System.Drawing.Size(153, 20);
+            this.TXTSearch.TabIndex = 10;
             // 
             // label9
             // 
@@ -335,16 +356,17 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "Mã bệnh nhân: ";
             // 
-            // button2
+            // BtTimKiem
             // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(267, 31);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 30);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Tìm kiếm";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("BtTimKiem.Image")));
+            this.BtTimKiem.Location = new System.Drawing.Point(267, 31);
+            this.BtTimKiem.Name = "BtTimKiem";
+            this.BtTimKiem.Size = new System.Drawing.Size(91, 30);
+            this.BtTimKiem.TabIndex = 11;
+            this.BtTimKiem.Text = "Tìm kiếm";
+            this.BtTimKiem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtTimKiem.UseVisualStyleBackColor = true;
+            this.BtTimKiem.Click += new System.EventHandler(this.BtTimKiem_Click);
             // 
             // BTXemKQ
             // 
@@ -369,27 +391,6 @@
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // MaBN
-            // 
-            this.MaBN.DataPropertyName = "MaBenhNhan";
-            this.MaBN.HeaderText = "Mã bệnh nhân";
-            this.MaBN.Name = "MaBN";
-            this.MaBN.ReadOnly = true;
-            // 
-            // TenBN
-            // 
-            this.TenBN.DataPropertyName = "TenBN";
-            this.TenBN.HeaderText = "Tên bệnh nhân";
-            this.TenBN.Name = "TenBN";
-            this.TenBN.ReadOnly = true;
-            // 
-            // Column
-            // 
-            this.Column.DataPropertyName = "TrangThaiThanhToan";
-            this.Column.HeaderText = "Thu tiền";
-            this.Column.Name = "Column";
-            this.Column.ReadOnly = true;
-            // 
             // FormQLBNKCLS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,8 +398,8 @@
             this.ClientSize = new System.Drawing.Size(929, 492);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BTXemKQ);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.BtTimKiem);
+            this.Controls.Add(this.TXTSearch);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BTThemPhieuCLS);
@@ -438,17 +439,17 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox TXTLyDoKham;
+        private System.Windows.Forms.TextBox TXTGioiTinh;
+        private System.Windows.Forms.TextBox TXTNoiLamViec;
+        private System.Windows.Forms.TextBox TXTDiaChi;
+        private System.Windows.Forms.TextBox TXTNgaySinh;
+        private System.Windows.Forms.TextBox TXTTenBN;
+        private System.Windows.Forms.TextBox TXTMaHoSoBenhAn;
+        private System.Windows.Forms.TextBox TXTMaBN;
+        private System.Windows.Forms.TextBox TXTSearch;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtTimKiem;
         private System.Windows.Forms.Button BTXemKQ;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaBN;

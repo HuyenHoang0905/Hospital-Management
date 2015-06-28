@@ -59,5 +59,39 @@ namespace Quanlykhambenh_BVYHCT
             // TODO: This line of code loads data into the 'dBBenhVienYHocCoTruyenDataSet.TblChoKhamCLS' table. You can move, or remove it, as needed.
 
         }
+
+        private void DGVBenhNhan_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = DGVBenhNhan.CurrentCell.RowIndex;
+            String maBenhNhan = DGVBenhNhan.Rows[index].Cells[0].Value.ToString();
+            DataTable dt = new DataTable();
+            dt = BusBNChoKhamCLS.GetBenhNhanID(maBenhNhan);
+            TXTMaBN.Text = dt.Rows[0][0].ToString();
+            TXTMaHoSoBenhAn.Text = dt.Rows[0][1].ToString();
+            TXTTenBN.Text = dt.Rows[0][2].ToString();
+            TXTNgaySinh.Text = dt.Rows[0][3].ToString();
+            TXTDiaChi.Text = dt.Rows[0][4].ToString();
+            TXTNoiLamViec.Text = dt.Rows[0][5].ToString();
+            String gioiTinh = dt.Rows[0][6].ToString();
+            if (gioiTinh == "True")
+                TXTGioiTinh.Text = "Nam";
+            else
+                TXTGioiTinh.Text = "Nữ";
+            TXTLyDoKham.Text = dt.Rows[0][7].ToString();
+        }
+
+        private void BtTimKiem_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            dt = BusBNChoKhamCLS.SearchBenhNhanID(TXTSearch.Text);
+            DGVBenhNhan.DataSource = dt;
+        }
+        public DataTable ConvertGioiTinh(DataTable dt)
+        {
+            DataTable tmp = new DataTable();
+            tmp = dt;
+            for (int i = 0; i < tmp.Rows.Count;i++ )
+                return tmp;
+        }
     }
 }
