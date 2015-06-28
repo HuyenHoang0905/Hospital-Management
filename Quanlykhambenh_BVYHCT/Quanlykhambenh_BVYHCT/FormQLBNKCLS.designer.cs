@@ -348,9 +348,9 @@
             // button2
             // 
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(267, 66);
+            this.button2.Location = new System.Drawing.Point(267, 31);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 28);
+            this.button2.Size = new System.Drawing.Size(91, 30);
             this.button2.TabIndex = 11;
             this.button2.Text = "Tìm kiếm";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
