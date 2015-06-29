@@ -11,3 +11,12 @@ F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\bin\Debug\Entities.pdb
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\obj\Debug\BUS.dll
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\obj\Debug\BUS.pdb
+E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\bin\Debug\BUS.dll
+E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\bin\Debug\BUS.pdb
+E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\bin\Debug\DAL.dll
+E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\bin\Debug\Entities.dll
+E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\bin\Debug\DAL.pdb
+E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\bin\Debug\Entities.pdb
+E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\obj\Debug\BUS.dll
+E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\obj\Debug\BUS.pdb

@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
 using System.Data.SqlClient;
 using BUS;
 using Entities;
@@ -16,6 +15,16 @@ namespace Quanlykhambenh_BVYHCT
 {
     public partial class FormQLBNKCLS : Form
     {
+<<<<<<< HEAD
+        //public BUSBenhNhanChoKhamCLS BusBNChoKhamCLS;
+        public FormQLBNKCLS()
+        {
+            InitializeComponent();
+            //BusBNChoKhamCLS = new BUSBenhNhanChoKhamCLS();
+            //DataTable dt = new System.Data.DataTable();
+            //dt = BusBNChoKhamCLS.GetBenhNhan();
+            //DGVBenhNhan.DataSource = dt;
+=======
         public BUSBenhNhanChoKhamCLS BusBNChoKhamCLS;
         public BUSPhieuKhamCLS BusPhieuKhamCLS;
         public FormQLBNKCLS()
@@ -26,8 +35,8 @@ namespace Quanlykhambenh_BVYHCT
             BusPhieuKhamCLS = new BUSPhieuKhamCLS();
             DataTable dt = new System.Data.DataTable();
             dt = BusBNChoKhamCLS.GetBenhNhan();
-            dt = this.ConvertTrangThaiThuTien(dt);
             DGVBenhNhan.DataSource = dt;
+>>>>>>> origin/master
         }
 
         private void lậpBáoCáoThốngKêToolStripMenuItem_Click(object sender, EventArgs e)
@@ -37,7 +46,7 @@ namespace Quanlykhambenh_BVYHCT
 
         private void BTThemPhieuCLS_Click(object sender, EventArgs e)
         {
-            if (TXTMaBN.Text != "" || RDBNChoKham.Checked == true)
+            if (TXTMaBN.Text != "" && RDBNChoKham.Checked == true)
             {
                 FormThemPhieuKham formThemPhieuKham = new FormThemPhieuKham();
                 formThemPhieuKham.Show();
@@ -50,7 +59,7 @@ namespace Quanlykhambenh_BVYHCT
 
         private void BTCapNhatKQ_Click(object sender, EventArgs e)
         {
-            if (TXTMaBN.Text != "" || RDListBNUpdateKQ.Checked == true)
+            if (TXTMaBN.Text != "" && RDListBNUpdateKQ.Checked == true)
             {
                 FormCapNhatKetQua formCapNhatKQ = new FormCapNhatKetQua();
                 formCapNhatKQ.Show();
@@ -64,7 +73,7 @@ namespace Quanlykhambenh_BVYHCT
 
         private void BTXemKQ_Click(object sender, EventArgs e)
         {
-            if (TXTMaBN.Text != "" || RDBNChuaChuyenKQ.Checked == true)
+            if (TXTMaBN.Text != "" && RDBNChuaChuyenKQ.Checked == true)
             {
                 FormXemKetQua formXemKQ = new FormXemKetQua();
                 formXemKQ.Show();
@@ -91,7 +100,8 @@ namespace Quanlykhambenh_BVYHCT
         private void DGVBenhNhan_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int index = DGVBenhNhan.CurrentCell.RowIndex;
-            String maBenhNhan = DGVBenhNhan.Rows[index].Cells[0].Value.ToString();
+            String maYeuCau = DGVBenhNhan.Rows[index].Cells["Column1"].Value.ToString();
+            String maBenhNhan = DGVBenhNhan.Rows[index].Cells["Column2"].Value.ToString();
             DataTable dt = new DataTable();
             dt = BusBNChoKhamCLS.GetBenhNhanID(maBenhNhan);
             TXTMaBN.Text = dt.Rows[0][0].ToString();
@@ -108,43 +118,43 @@ namespace Quanlykhambenh_BVYHCT
                 TXTGioiTinh.Text = "Nữ";
             TXTLyDoKham.Text = dt.Rows[0][7].ToString();
             DataTable dt1 = new DataTable();
-            dt1 = BusBNChoKhamCLS.SearchBenhNhanID(dt.Rows[0][0].ToString());
+            dt1 = BusBNChoKhamCLS.SearchBenhNhanMaYeuCau(maYeuCau);
             ClassVariableStatic.bnChoKhamCLS.MaBenhNhan = dt1.Rows[0][0].ToString();
             ClassVariableStatic.bnChoKhamCLS.MaBSYeuCau = dt1.Rows[0][3].ToString();
+            ClassVariableStatic.bnChoKhamCLS.MaYeuCau = dt1.Rows[0][2].ToString();
         }
 
         private void BtTimKiem_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            dt = BusBNChoKhamCLS.SearchBenhNhanID(TXTSearch.Text);
-            dt = this.ConvertTrangThaiThuTien(dt);
+            dt = BusBNChoKhamCLS.SearchBenhNhanMaYeuCau(TXTSearch.Text);
             DGVBenhNhan.DataSource = dt;
         }
-        public DataTable ConvertTrangThaiThuTien(DataTable dt)
-        {
-            //clone datatable     
-            DataTable dtCloned = dt.Clone();
-            //change data type of column
-            dtCloned.Columns[2].DataType = typeof(String);
-            //import row to cloned datatable
-            foreach (DataRow row in dt.Rows)
-            {
-                dtCloned.ImportRow(row);
-            }
-            for (int i = 0; i < dtCloned.Rows.Count; i++)
-            {
-                if (dtCloned.Rows[i][2].ToString() == "True")
-                {
-                    dtCloned.Rows[i][2] = "Đã thu";
-                }
-                else
-                {
-                    dtCloned.Rows[i][2] = "Chưa thu";
+        //public DataTable ConvertTrangThaiThuTien(DataTable dt)
+        //{
+        //    //clone datatable     
+        //    DataTable dtCloned = dt.Clone();
+        //    //change data type of column
+        //    dtCloned.Columns[2].DataType = typeof(String);
+        //    //import row to cloned datatable
+        //    foreach (DataRow row in dt.Rows)
+        //    {
+        //        dtCloned.ImportRow(row);
+        //    }
+        //    for (int i = 0; i < dtCloned.Rows.Count; i++)
+        //    {
+        //        if (dtCloned.Rows[i][2].ToString() == "True")
+        //        {
+        //            dtCloned.Rows[i][2] = "Đã thu";
+        //        }
+        //        else
+        //        {
+        //            dtCloned.Rows[i][2] = "Chưa thu";
 
-                }
-            }
-            return dtCloned;
-        }
+        //        }
+        //    }
+        //    return dtCloned;
+        //}
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
@@ -162,8 +172,15 @@ namespace Quanlykhambenh_BVYHCT
             DGVBenhNhan.Show();
             DataTable dt = new System.Data.DataTable();
             dt = BusBNChoKhamCLS.GetBenhNhan();
-            dt = this.ConvertTrangThaiThuTien(dt);
             DGVBenhNhan.DataSource = dt;
+            TXTMaBN.Text = "";
+            TXTMaHoSoBenhAn.Text = "";
+            TXTTenBN.Text = "";
+            TXTNgaySinh.Text = "";
+            TXTDiaChi.Text = "";
+            TXTNoiLamViec.Text = "";
+            TXTGioiTinh.Text = "";
+            TXTLyDoKham.Text = "";
         }
 
         private void RDListBNUpdateKQ_CheckedChanged(object sender, EventArgs e)
@@ -172,8 +189,15 @@ namespace Quanlykhambenh_BVYHCT
             DTGVCapNhatKQ.Show();
             DataTable dt = new System.Data.DataTable();
             dt = BusPhieuKhamCLS.SelectBNUpdateKQ();
-            dt = this.ConvertTrangThaiThuTien(dt);
             DTGVCapNhatKQ.DataSource = dt;
+            TXTMaBN.Text = "";
+            TXTMaHoSoBenhAn.Text = "";
+            TXTTenBN.Text = "";
+            TXTNgaySinh.Text = "";
+            TXTDiaChi.Text = "";
+            TXTNoiLamViec.Text = "";
+            TXTGioiTinh.Text = "";
+            TXTLyDoKham.Text = "";
         }
 
         private void DTGVCapNhatKQ_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -205,8 +229,15 @@ namespace Quanlykhambenh_BVYHCT
             DTGVCapNhatKQ.Show();
             DataTable dt = new System.Data.DataTable();
             dt = BusPhieuKhamCLS.SelectBNChuaChuyenKQ();
-            dt = this.ConvertTrangThaiThuTien(dt);
             DTGVCapNhatKQ.DataSource = dt;
+            TXTMaBN.Text = "";
+            TXTMaHoSoBenhAn.Text = "";
+            TXTTenBN.Text = "";
+            TXTNgaySinh.Text = "";
+            TXTDiaChi.Text = "";
+            TXTNoiLamViec.Text = "";
+            TXTGioiTinh.Text = "";
+            TXTLyDoKham.Text = "";
         }
     }
 }

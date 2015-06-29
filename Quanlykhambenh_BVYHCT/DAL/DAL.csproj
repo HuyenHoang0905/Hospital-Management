@@ -39,11 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <Compile Include="DataConnect.cs" />
+=======
     <Compile Include="ConnectDB.cs" />
     <Compile Include="DALBenhNhanChoKhamCLS.cs" />
     <Compile Include="DALDanhMucKhamCLS.cs" />
     <Compile Include="DALNguoiDung.cs" />
     <Compile Include="DALPhieuKhamCLS.cs" />
+>>>>>>> origin/master
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

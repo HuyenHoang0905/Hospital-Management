@@ -39,10 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <Compile Include="ChoKhamCLS_Bus.cs" />
+    <Compile Include="HoSoBenhAn_BUS.cs" />
+=======
     <Compile Include="BUSBenhNhanChoKhamCLS.cs" />
     <Compile Include="BUSDanhMucKhamCLS.cs" />
     <Compile Include="BUSNguoiDung.cs" />
     <Compile Include="BUSPhieuKhamCLS.cs" />
+>>>>>>> origin/master
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +59,12 @@
       <Project>{b3f543a9-620d-4f79-af13-7518b378b3ea}</Project>
       <Name>Entities</Name>
     </ProjectReference>
+<<<<<<< HEAD
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+=======
+>>>>>>> origin/master
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
