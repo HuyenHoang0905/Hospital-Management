@@ -5,7 +5,9 @@ C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\obj
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\bin\Debug\BUS.dll
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\bin\Debug\BUS.pdb
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\bin\Debug\DAL.dll
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\bin\Debug\Entities.dll
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\bin\Debug\DAL.pdb
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\bin\Debug\Entities.pdb
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\obj\Debug\BUS.dll
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\BUS\obj\Debug\BUS.pdb

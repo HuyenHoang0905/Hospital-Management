@@ -19,7 +19,7 @@ namespace DAL
         {
             DataTable dt = new DataTable();
             String query = "Select [TenNguoiDung] From [NguoiDung]" +
-                " Where [MaNguoiDung]='" + MaND + "'";
+                " Where [TenDangNhap]='" + MaND + "'";
             dt = ConnectionDB.ExecuteSelect(query);
             return dt;
         }

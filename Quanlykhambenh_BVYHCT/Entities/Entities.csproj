@@ -39,8 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BenhNhanCapNhatKQ.cs" />
     <Compile Include="BenhNhanChoKhamCLS.cs" />
     <Compile Include="ClassVariableStatic.cs" />
+    <Compile Include="PhieuKhamCLS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

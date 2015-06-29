@@ -29,38 +29,39 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormXemKetQua));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.PTViewKQ = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PTViewKQ)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // PTViewKQ
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.PTViewKQ.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Location = new System.Drawing.Point(95, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(614, 461);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.PTViewKQ.Location = new System.Drawing.Point(95, 12);
+            this.PTViewKQ.Name = "PTViewKQ";
+            this.PTViewKQ.Size = new System.Drawing.Size(614, 461);
+            this.PTViewKQ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PTViewKQ.TabIndex = 0;
+            this.PTViewKQ.TabStop = false;
             // 
             // FormXemKetQua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 485);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PTViewKQ);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormXemKetQua";
             this.Text = "Xem kết quả";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.FormXemKetQua_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.PTViewKQ)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PTViewKQ;
     }
 }

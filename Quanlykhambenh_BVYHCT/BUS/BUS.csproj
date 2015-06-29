@@ -42,12 +42,17 @@
     <Compile Include="BUSBenhNhanChoKhamCLS.cs" />
     <Compile Include="BUSDanhMucKhamCLS.cs" />
     <Compile Include="BUSNguoiDung.cs" />
+    <Compile Include="BUSPhieuKhamCLS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{71d91454-2bb3-4d99-a443-b887eea95c68}</Project>
       <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{b3f543a9-620d-4f79-af13-7518b378b3ea}</Project>
+      <Name>Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

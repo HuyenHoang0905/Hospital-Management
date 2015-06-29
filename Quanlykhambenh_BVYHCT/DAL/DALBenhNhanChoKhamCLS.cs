@@ -19,7 +19,8 @@ namespace DAL
         {
             String query = @"SELECT [TblChoKhamCLS].MaBenhNhan, TenBN,"
                 + @" TrangThaiThanhToan From [TblChoKhamCLS] "
-                + @"inner join TblBenhNhan on [TblChoKhamCLS].MaBenhNhan=[TblBenhNhan].MaBenhNhan";
+                + @"inner join TblBenhNhan on [TblChoKhamCLS].MaBenhNhan=[TblBenhNhan].MaBenhNhan"
+                + @" Where TrangThaiThanhToan='True'";
             DataTable dt = new DataTable();
             dt = ConnectionDB.ExecuteSelect(query);
             return dt;
@@ -37,7 +38,8 @@ namespace DAL
             String query = @"SELECT [TblChoKhamCLS].MaBenhNhan, TenBN,"
                 + @" TrangThaiThanhToan, MaBSYeuCau From [TblChoKhamCLS] "
                 + @"inner join TblBenhNhan on [TblChoKhamCLS].MaBenhNhan=[TblBenhNhan].MaBenhNhan"
-                + @" Where [TblChoKhamCLS].MaBenhNhan='" + MaBN + "'";
+                + @" Where [TblChoKhamCLS].MaBenhNhan='" + MaBN + "'"
+                + @" and TrangThaiThanhToan='True'";
             DataTable dt = new DataTable();
             dt = ConnectionDB.ExecuteSelect(query);
             return dt;

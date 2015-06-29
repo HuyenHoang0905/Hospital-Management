@@ -61,9 +61,17 @@
             this.BtTimKiem = new System.Windows.Forms.Button();
             this.BTXemKQ = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.RDBNChoKham = new System.Windows.Forms.RadioButton();
+            this.RDListBNUpdateKQ = new System.Windows.Forms.RadioButton();
+            this.DTGVCapNhatKQ = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RDBNChuaChuyenKQ = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.DGVBenhNhan)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DTGVCapNhatKQ)).BeginInit();
             this.SuspendLayout();
             // 
             // DGVBenhNhan
@@ -75,10 +83,10 @@
             this.MaBN,
             this.TenBN,
             this.Column});
-            this.DGVBenhNhan.Location = new System.Drawing.Point(12, 81);
+            this.DGVBenhNhan.Location = new System.Drawing.Point(12, 123);
             this.DGVBenhNhan.Name = "DGVBenhNhan";
             this.DGVBenhNhan.ReadOnly = true;
-            this.DGVBenhNhan.Size = new System.Drawing.Size(301, 401);
+            this.DGVBenhNhan.Size = new System.Drawing.Size(301, 358);
             this.DGVBenhNhan.TabIndex = 0;
             this.DGVBenhNhan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVBenhNhan_CellClick);
             // 
@@ -136,6 +144,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(929, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // menuToolStripMenuItem
             // 
@@ -341,7 +350,7 @@
             // TXTSearch
             // 
             this.TXTSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTSearch.Location = new System.Drawing.Point(108, 37);
+            this.TXTSearch.Location = new System.Drawing.Point(108, 25);
             this.TXTSearch.Name = "TXTSearch";
             this.TXTSearch.Size = new System.Drawing.Size(153, 20);
             this.TXTSearch.TabIndex = 10;
@@ -350,7 +359,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(12, 40);
+            this.label9.Location = new System.Drawing.Point(12, 28);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 13);
             this.label9.TabIndex = 9;
@@ -359,7 +368,7 @@
             // BtTimKiem
             // 
             this.BtTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("BtTimKiem.Image")));
-            this.BtTimKiem.Location = new System.Drawing.Point(267, 31);
+            this.BtTimKiem.Location = new System.Drawing.Point(267, 19);
             this.BtTimKiem.Name = "BtTimKiem";
             this.BtTimKiem.Size = new System.Drawing.Size(91, 30);
             this.BtTimKiem.TabIndex = 11;
@@ -383,28 +392,105 @@
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(319, 132);
+            this.button1.Location = new System.Drawing.Point(319, 143);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 52);
             this.button1.TabIndex = 13;
             this.button1.Text = "Chuyển kết quả";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // RDBNChoKham
+            // 
+            this.RDBNChoKham.AutoSize = true;
+            this.RDBNChoKham.Checked = true;
+            this.RDBNChoKham.Location = new System.Drawing.Point(45, 51);
+            this.RDBNChoKham.Name = "RDBNChoKham";
+            this.RDBNChoKham.Size = new System.Drawing.Size(181, 17);
+            this.RDBNChoKham.TabIndex = 14;
+            this.RDBNChoKham.TabStop = true;
+            this.RDBNChoKham.Text = "Danh sách bệnh nhân chờ khám";
+            this.RDBNChoKham.UseVisualStyleBackColor = true;
+            this.RDBNChoKham.CheckedChanged += new System.EventHandler(this.RDBNChoKham_CheckedChanged);
+            // 
+            // RDListBNUpdateKQ
+            // 
+            this.RDListBNUpdateKQ.AutoSize = true;
+            this.RDListBNUpdateKQ.Location = new System.Drawing.Point(45, 74);
+            this.RDListBNUpdateKQ.Name = "RDListBNUpdateKQ";
+            this.RDListBNUpdateKQ.Size = new System.Drawing.Size(236, 17);
+            this.RDListBNUpdateKQ.TabIndex = 15;
+            this.RDListBNUpdateKQ.Text = "Danh sách bệnh nhân cần cập nhật kết quả";
+            this.RDListBNUpdateKQ.UseVisualStyleBackColor = true;
+            this.RDListBNUpdateKQ.CheckedChanged += new System.EventHandler(this.RDListBNUpdateKQ_CheckedChanged);
+            // 
+            // DTGVCapNhatKQ
+            // 
+            this.DTGVCapNhatKQ.AllowUserToAddRows = false;
+            this.DTGVCapNhatKQ.AllowUserToDeleteRows = false;
+            this.DTGVCapNhatKQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DTGVCapNhatKQ.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.DTGVCapNhatKQ.Location = new System.Drawing.Point(12, 123);
+            this.DTGVCapNhatKQ.Name = "DTGVCapNhatKQ";
+            this.DTGVCapNhatKQ.ReadOnly = true;
+            this.DTGVCapNhatKQ.Size = new System.Drawing.Size(301, 358);
+            this.DTGVCapNhatKQ.TabIndex = 16;
+            this.DTGVCapNhatKQ.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGVCapNhatKQ_CellClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "MaBenhNhan";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Mã bệnh nhân";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "MaPhieuKham";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Mã phiếu khám";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "TrangThaiThanhToan";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Thu tiền";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // RDBNChuaChuyenKQ
+            // 
+            this.RDBNChuaChuyenKQ.AutoSize = true;
+            this.RDBNChuaChuyenKQ.Location = new System.Drawing.Point(45, 97);
+            this.RDBNChuaChuyenKQ.Name = "RDBNChuaChuyenKQ";
+            this.RDBNChuaChuyenKQ.Size = new System.Drawing.Size(208, 17);
+            this.RDBNChuaChuyenKQ.TabIndex = 17;
+            this.RDBNChuaChuyenKQ.Text = "Danh sách bệnh chưa chuyển kết quả";
+            this.RDBNChuaChuyenKQ.UseVisualStyleBackColor = true;
+            this.RDBNChuaChuyenKQ.CheckedChanged += new System.EventHandler(this.RDBNChuaChuyenKQ_CheckedChanged);
             // 
             // FormQLBNKCLS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 492);
+            this.Controls.Add(this.RDBNChuaChuyenKQ);
+            this.Controls.Add(this.DTGVCapNhatKQ);
+            this.Controls.Add(this.RDListBNUpdateKQ);
+            this.Controls.Add(this.RDBNChoKham);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BTXemKQ);
             this.Controls.Add(this.BtTimKiem);
             this.Controls.Add(this.TXTSearch);
+            this.Controls.Add(this.DGVBenhNhan);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BTThemPhieuCLS);
             this.Controls.Add(this.BTCapNhatKQ);
-            this.Controls.Add(this.DGVBenhNhan);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -416,6 +502,7 @@
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DTGVCapNhatKQ)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -455,6 +542,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MaBN;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenBN;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column;
+        private System.Windows.Forms.RadioButton RDBNChoKham;
+        private System.Windows.Forms.RadioButton RDListBNUpdateKQ;
+        private System.Windows.Forms.DataGridView DTGVCapNhatKQ;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.RadioButton RDBNChuaChuyenKQ;
     }
 }
 

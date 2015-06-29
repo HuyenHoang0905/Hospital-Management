@@ -17,13 +17,16 @@ namespace Quanlykhambenh_BVYHCT
     public partial class FormQLBNKCLS : Form
     {
         public BUSBenhNhanChoKhamCLS BusBNChoKhamCLS;
+        public BUSPhieuKhamCLS BusPhieuKhamCLS;
         public FormQLBNKCLS()
         {
             InitializeComponent();
+            DTGVCapNhatKQ.Hide();
             BusBNChoKhamCLS = new BUSBenhNhanChoKhamCLS();
+            BusPhieuKhamCLS = new BUSPhieuKhamCLS();
             DataTable dt = new System.Data.DataTable();
             dt = BusBNChoKhamCLS.GetBenhNhan();
-            dt = this.ConvertGioiTinh(dt);
+            dt = this.ConvertTrangThaiThuTien(dt);
             DGVBenhNhan.DataSource = dt;
         }
 
@@ -34,26 +37,43 @@ namespace Quanlykhambenh_BVYHCT
 
         private void BTThemPhieuCLS_Click(object sender, EventArgs e)
         {
-            if (TXTMaBN.Text != "")
+            if (TXTMaBN.Text != "" || RDBNChoKham.Checked == true)
             {
                 FormThemPhieuKham formThemPhieuKham = new FormThemPhieuKham();
                 formThemPhieuKham.Show();
             }
-            else {
+            else
+            {
                 MessageBox.Show("Vui lòng chọn 1 bệnh nhân để thêm hồ sơ bệnh án cho bệnh nhân đó!");
             }
         }
 
         private void BTCapNhatKQ_Click(object sender, EventArgs e)
         {
-            FormCapNhatKetQua formCapNhatKQ = new FormCapNhatKetQua();
-            formCapNhatKQ.Show();
+            if (TXTMaBN.Text != "" || RDListBNUpdateKQ.Checked == true)
+            {
+                FormCapNhatKetQua formCapNhatKQ = new FormCapNhatKetQua();
+                formCapNhatKQ.Show();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn 1 bệnh nhân để cập nhật kết quả khám CLS cho bệnh nhân đó!");
+            }
+
         }
 
         private void BTXemKQ_Click(object sender, EventArgs e)
         {
-            FormXemKetQua formXemKQ = new FormXemKetQua();
-            formXemKQ.Show();
+            if (TXTMaBN.Text != "" || RDBNChuaChuyenKQ.Checked == true)
+            {
+                FormXemKetQua formXemKQ = new FormXemKetQua();
+                formXemKQ.Show();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn 1 bệnh nhân để xem kết quả của bệnh nhân đó!");
+            }
+
         }
 
         private void quảnLýVậtTưYTếToolStripMenuItem_Click(object sender, EventArgs e)
@@ -97,9 +117,10 @@ namespace Quanlykhambenh_BVYHCT
         {
             DataTable dt = new DataTable();
             dt = BusBNChoKhamCLS.SearchBenhNhanID(TXTSearch.Text);
+            dt = this.ConvertTrangThaiThuTien(dt);
             DGVBenhNhan.DataSource = dt;
         }
-        public DataTable ConvertGioiTinh(DataTable dt)
+        public DataTable ConvertTrangThaiThuTien(DataTable dt)
         {
             //clone datatable     
             DataTable dtCloned = dt.Clone();
@@ -123,6 +144,69 @@ namespace Quanlykhambenh_BVYHCT
                 }
             }
             return dtCloned;
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RDBNChoKham_CheckedChanged(object sender, EventArgs e)
+        {
+            DTGVCapNhatKQ.Hide();
+            DGVBenhNhan.Show();
+            DataTable dt = new System.Data.DataTable();
+            dt = BusBNChoKhamCLS.GetBenhNhan();
+            dt = this.ConvertTrangThaiThuTien(dt);
+            DGVBenhNhan.DataSource = dt;
+        }
+
+        private void RDListBNUpdateKQ_CheckedChanged(object sender, EventArgs e)
+        {
+            DGVBenhNhan.Hide();
+            DTGVCapNhatKQ.Show();
+            DataTable dt = new System.Data.DataTable();
+            dt = BusPhieuKhamCLS.SelectBNUpdateKQ();
+            dt = this.ConvertTrangThaiThuTien(dt);
+            DTGVCapNhatKQ.DataSource = dt;
+        }
+
+        private void DTGVCapNhatKQ_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = DTGVCapNhatKQ.CurrentCell.RowIndex;
+            String maBenhNhan = DTGVCapNhatKQ.Rows[index].Cells[0].Value.ToString();
+            DataTable dt = new DataTable();
+            dt = BusBNChoKhamCLS.GetBenhNhanID(maBenhNhan);
+            TXTMaBN.Text = dt.Rows[0][0].ToString();
+            TXTMaHoSoBenhAn.Text = dt.Rows[0][1].ToString();
+            TXTTenBN.Text = dt.Rows[0][2].ToString();
+            DateTime dtNgaySinh = Convert.ToDateTime(dt.Rows[0][3].ToString());
+            TXTNgaySinh.Text = dtNgaySinh.ToShortDateString();
+            TXTDiaChi.Text = dt.Rows[0][4].ToString();
+            TXTNoiLamViec.Text = dt.Rows[0][5].ToString();
+            String gioiTinh = dt.Rows[0][6].ToString();
+            if (gioiTinh == "True")
+                TXTGioiTinh.Text = "Nam";
+            else
+                TXTGioiTinh.Text = "Nữ";
+            TXTLyDoKham.Text = dt.Rows[0][7].ToString();
+            String maPhieuKham = DTGVCapNhatKQ.Rows[index].Cells[1].Value.ToString();
+            ClassVariableStatic.bnCapNhatKQ.MaPhieuKham = maPhieuKham;
+        }
+
+        private void RDBNChuaChuyenKQ_CheckedChanged(object sender, EventArgs e)
+        {
+            DGVBenhNhan.Hide();
+            DTGVCapNhatKQ.Show();
+            DataTable dt = new System.Data.DataTable();
+            dt = BusPhieuKhamCLS.SelectBNChuaChuyenKQ();
+            dt = this.ConvertTrangThaiThuTien(dt);
+            DTGVCapNhatKQ.DataSource = dt;
         }
     }
 }

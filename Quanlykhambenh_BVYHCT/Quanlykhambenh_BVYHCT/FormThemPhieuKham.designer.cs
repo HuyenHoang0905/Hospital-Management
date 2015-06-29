@@ -42,16 +42,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.CBLoaiDanhMucCLS = new System.Windows.Forms.ComboBox();
+            this.tblLoaiKhamCLSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dBBenhVienYHocCoTruyenDataSet = new Quanlykhambenh_BVYHCT.DBBenhVienYHocCoTruyenDataSet();
             this.CBLoaiXetNghiem = new System.Windows.Forms.ComboBox();
             this.TXTTenBSYeuCau = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.TBThemPhieuKhamCLS = new System.Windows.Forms.Button();
-            this.dBBenhVienYHocCoTruyenDataSet = new Quanlykhambenh_BVYHCT.DBBenhVienYHocCoTruyenDataSet();
-            this.tblLoaiKhamCLSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblLoaiKhamCLSTableAdapter = new Quanlykhambenh_BVYHCT.DBBenhVienYHocCoTruyenDataSetTableAdapters.TblLoaiKhamCLSTableAdapter();
             this.TXTNgayGioTraKQ = new System.Windows.Forms.DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.dBBenhVienYHocCoTruyenDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLoaiKhamCLSBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBBenhVienYHocCoTruyenDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // TXTNguoiThucHien
@@ -168,6 +168,16 @@
             this.CBLoaiDanhMucCLS.ValueMember = "MaLoaiKhamCLS";
             this.CBLoaiDanhMucCLS.TextChanged += new System.EventHandler(this.CBLoaiDanhMucCLS_TextChanged);
             // 
+            // tblLoaiKhamCLSBindingSource
+            // 
+            this.tblLoaiKhamCLSBindingSource.DataMember = "TblLoaiKhamCLS";
+            this.tblLoaiKhamCLSBindingSource.DataSource = this.dBBenhVienYHocCoTruyenDataSet;
+            // 
+            // dBBenhVienYHocCoTruyenDataSet
+            // 
+            this.dBBenhVienYHocCoTruyenDataSet.DataSetName = "DBBenhVienYHocCoTruyenDataSet";
+            this.dBBenhVienYHocCoTruyenDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // CBLoaiXetNghiem
             // 
             this.CBLoaiXetNghiem.FormattingEnabled = true;
@@ -205,16 +215,6 @@
             this.TBThemPhieuKhamCLS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.TBThemPhieuKhamCLS.UseVisualStyleBackColor = true;
             this.TBThemPhieuKhamCLS.Click += new System.EventHandler(this.TBThemPhieuKhamCLS_Click);
-            // 
-            // dBBenhVienYHocCoTruyenDataSet
-            // 
-            this.dBBenhVienYHocCoTruyenDataSet.DataSetName = "DBBenhVienYHocCoTruyenDataSet";
-            this.dBBenhVienYHocCoTruyenDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblLoaiKhamCLSBindingSource
-            // 
-            this.tblLoaiKhamCLSBindingSource.DataMember = "TblLoaiKhamCLS";
-            this.tblLoaiKhamCLSBindingSource.DataSource = this.dBBenhVienYHocCoTruyenDataSet;
             // 
             // tblLoaiKhamCLSTableAdapter
             // 
@@ -255,8 +255,8 @@
             this.Name = "FormThemPhieuKham";
             this.Text = "Thêm phiếu khám cận lâm sàng";
             this.Load += new System.EventHandler(this.FormThemPhieuKham_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dBBenhVienYHocCoTruyenDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLoaiKhamCLSBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBBenhVienYHocCoTruyenDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

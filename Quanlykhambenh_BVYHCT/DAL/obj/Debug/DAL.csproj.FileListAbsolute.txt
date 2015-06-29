@@ -1,4 +1,7 @@
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\DAL\bin\Debug\DAL.dll
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\DAL\bin\Debug\DAL.pdb
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\DAL\bin\Debug\Entities.dll
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\DAL\bin\Debug\Entities.pdb
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\DAL\obj\Debug\DAL.dll
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\DAL\obj\Debug\DAL.pdb

@@ -18,7 +18,7 @@ namespace DAL
         }
         public DataTable GetDanhMucKhamCLS(String LoaiKhamCLS)
         {
-            String query = @"SELECT [MaDanhMuc],[TenDanhMuc] From [TblDanhMucKhamCLS] "
+            String query = @"SELECT [MaChiTietKham],[TenChiTietKham] From [TblChiTietKham] "
                 + @" Where[MaLoaiKhamCLS]='" + LoaiKhamCLS + "'";
             DataTable dt = new DataTable();
             dt = ConnectionDB.ExecuteSelect(query);
