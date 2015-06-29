@@ -50,8 +50,13 @@
             this.TBThemPhieuKhamCLS = new System.Windows.Forms.Button();
             this.tblLoaiKhamCLSTableAdapter = new Quanlykhambenh_BVYHCT.DBBenhVienYHocCoTruyenDataSetTableAdapters.TblLoaiKhamCLSTableAdapter();
             this.TXTNgayGioTraKQ = new System.Windows.Forms.DateTimePicker();
+            this.dBBenhVienYHocCoTruyenDataSet1 = new Quanlykhambenh_BVYHCT.DBBenhVienYHocCoTruyenDataSet1();
+            this.tblChiTietKhamBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblChiTietKhamTableAdapter = new Quanlykhambenh_BVYHCT.DBBenhVienYHocCoTruyenDataSet1TableAdapters.TblChiTietKhamTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.tblLoaiKhamCLSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBBenhVienYHocCoTruyenDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBBenhVienYHocCoTruyenDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblChiTietKhamBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // TXTNguoiThucHien
@@ -180,11 +185,14 @@
             // 
             // CBLoaiXetNghiem
             // 
+            this.CBLoaiXetNghiem.DataSource = this.tblChiTietKhamBindingSource;
+            this.CBLoaiXetNghiem.DisplayMember = "TenChiTietKham";
             this.CBLoaiXetNghiem.FormattingEnabled = true;
             this.CBLoaiXetNghiem.Location = new System.Drawing.Point(201, 225);
             this.CBLoaiXetNghiem.Name = "CBLoaiXetNghiem";
             this.CBLoaiXetNghiem.Size = new System.Drawing.Size(234, 21);
             this.CBLoaiXetNghiem.TabIndex = 33;
+            this.CBLoaiXetNghiem.ValueMember = "MaChiTietKham";
             // 
             // TXTTenBSYeuCau
             // 
@@ -229,6 +237,20 @@
             this.TXTNgayGioTraKQ.Size = new System.Drawing.Size(234, 20);
             this.TXTNgayGioTraKQ.TabIndex = 37;
             // 
+            // dBBenhVienYHocCoTruyenDataSet1
+            // 
+            this.dBBenhVienYHocCoTruyenDataSet1.DataSetName = "DBBenhVienYHocCoTruyenDataSet1";
+            this.dBBenhVienYHocCoTruyenDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblChiTietKhamBindingSource
+            // 
+            this.tblChiTietKhamBindingSource.DataMember = "TblChiTietKham";
+            this.tblChiTietKhamBindingSource.DataSource = this.dBBenhVienYHocCoTruyenDataSet1;
+            // 
+            // tblChiTietKhamTableAdapter
+            // 
+            this.tblChiTietKhamTableAdapter.ClearBeforeFill = true;
+            // 
             // FormThemPhieuKham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,6 +279,8 @@
             this.Load += new System.EventHandler(this.FormThemPhieuKham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tblLoaiKhamCLSBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBBenhVienYHocCoTruyenDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBBenhVienYHocCoTruyenDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblChiTietKhamBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,5 +308,8 @@
         private System.Windows.Forms.BindingSource tblLoaiKhamCLSBindingSource;
         private DBBenhVienYHocCoTruyenDataSetTableAdapters.TblLoaiKhamCLSTableAdapter tblLoaiKhamCLSTableAdapter;
         public System.Windows.Forms.DateTimePicker TXTNgayGioTraKQ;
+        private DBBenhVienYHocCoTruyenDataSet1 dBBenhVienYHocCoTruyenDataSet1;
+        private System.Windows.Forms.BindingSource tblChiTietKhamBindingSource;
+        private DBBenhVienYHocCoTruyenDataSet1TableAdapters.TblChiTietKhamTableAdapter tblChiTietKhamTableAdapter;
     }
 }

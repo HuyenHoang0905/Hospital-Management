@@ -19,38 +19,37 @@ namespace Quanlykhambenh_BVYHCT
         public BUSDanhMucKhamCLS busDanhMucKhamCLS;
         public BUSNguoiDung busNguoiDung;
         public BUSPhieuKhamCLS busPhieuKhamCLS;
+        public BUSBenhNhanChoKhamCLS busChoKhamCLS;
         public FormThemPhieuKham()
         {
             InitializeComponent();
             busDanhMucKhamCLS = new BUSDanhMucKhamCLS();
             busNguoiDung = new BUSNguoiDung();
             busPhieuKhamCLS = new BUSPhieuKhamCLS();
-            TXTMaBN.Text = ClassVariableStatic.bnChoKhamCLS.MaBenhNhan;
-            TXTBSYeuCau.Text = ClassVariableStatic.bnChoKhamCLS.MaBSYeuCau;
-            DataTable dt = busNguoiDung.GetSelect(TXTBSYeuCau.Text.Trim());
-            TXTTenBSYeuCau.Text = dt.Rows[0][0].ToString();
-            TXTNgayGioThucHien.Text = DateTime.Now.ToString();
+            busChoKhamCLS = new BUSBenhNhanChoKhamCLS();
         }
 
         private void FormThemPhieuKham_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dBBenhVienYHocCoTruyenDataSet1.TblChiTietKham' table. You can move, or remove it, as needed.
+            this.tblChiTietKhamTableAdapter.Fill(this.dBBenhVienYHocCoTruyenDataSet1.TblChiTietKham);
             this.tblLoaiKhamCLSTableAdapter.Fill(this.dBBenhVienYHocCoTruyenDataSet.TblLoaiKhamCLS);
+            TXTMaBN.Text = ClassVariableStatic.bnChoKhamCLS.MaBenhNhan;
+            TXTBSYeuCau.Text = ClassVariableStatic.bnChoKhamCLS.MaBSYeuCau;
+            try
+            {
+                DataTable dt = busNguoiDung.GetSelect(TXTBSYeuCau.Text.Trim());
+                TXTTenBSYeuCau.Text = dt.Rows[0][0].ToString();
+            }
+            catch (Exception) { }
+            TXTNgayGioThucHien.Text = DateTime.Now.ToString();
+            DataTable dt1 = busChoKhamCLS.SelectBNMaYeuCau(ClassVariableStatic.bnChoKhamCLS.MaYeuCau);
+            CBLoaiXetNghiem.Text = dt1.Rows[0][1].ToString();
+            CBLoaiDanhMucCLS.Text = dt1.Rows[0][0].ToString();
         }
 
         private void CBLoaiDanhMucCLS_TextChanged(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            String loaiCLS = CBLoaiDanhMucCLS.SelectedValue + "";
-            dt = busDanhMucKhamCLS.SelectDanhMucKhamCLS(loaiCLS);
-            Dictionary<string, string> dicLoaiXetNghiem = new Dictionary<string, string>();
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                dicLoaiXetNghiem.Add(dt.Rows[i][0].ToString(), dt.Rows[i][1].ToString());
-            }
-            CBLoaiXetNghiem.DataSource = new BindingSource(dicLoaiXetNghiem, null);
-            CBLoaiXetNghiem.DisplayMember = "Value";
-            CBLoaiXetNghiem.ValueMember = "Key";
-            CBLoaiXetNghiem.Text = dt.Rows[0][1].ToString();
         }
 
         private void TBThemPhieuKhamCLS_Click(object sender, EventArgs e)
@@ -67,6 +66,7 @@ namespace Quanlykhambenh_BVYHCT
                 pk.NgayGioiTraKQ = Convert.ToDateTime(TXTNgayGioTraKQ.Text);
                 pk.KetQua = "";
                 busPhieuKhamCLS.InsertPhieuKhamCLS(pk);
+                busChoKhamCLS.DeleteBNMaYeuCau(ClassVariableStatic.bnChoKhamCLS.MaYeuCau);
                 MessageBox.Show("Đã thêm phiếu khám CLS thành công!!");
             }
             catch (Exception)

@@ -39,19 +39,17 @@ namespace DAL
         }
         public DataTable SelectBNCapNhatKQ()
         {
-            String query = @"SELECT TblPhieuKhamCLS.MaBenhNhan,MaPhieuKham,TrangThaiThanhToan From TblPhieuKhamCLS
+            String query = @"SELECT TblPhieuKhamCLS.MaBenhNhan,MaPhieuKham From TblPhieuKhamCLS
                             inner join TblBenhNhan on TblPhieuKhamCLS.MaBenhNhan =TblBenhNhan.MaBenhNhan
-                            inner join TblChoKhamCLS on TblPhieuKhamCLS.MaBenhNhan =TblChoKhamCLS.MaBenhNhan
-                            where KetQuaXetNghiem='' and TblChoKhamCLS.TrangThaiThanhToan='True'";
+                            where KetQuaXetNghiem=''";
             DataTable dt = new DataTable();
             dt = ConnectionDB.ExecuteSelect(query);
             return dt;
         }
         public DataTable SelectBNChuaChuyenKQ()
         {
-            String query = @"SELECT TblPhieuKhamCLS.MaBenhNhan,MaPhieuKham,TrangThaiThanhToan From TblPhieuKhamCLS
+            String query = @"SELECT TblPhieuKhamCLS.MaBenhNhan,MaPhieuKham From TblPhieuKhamCLS
                             inner join TblBenhNhan on TblPhieuKhamCLS.MaBenhNhan =TblBenhNhan.MaBenhNhan
-                            inner join TblChoKhamCLS on TblPhieuKhamCLS.MaBenhNhan =TblChoKhamCLS.MaBenhNhan
                             where TrangThaiChuyenKQ='False'";
             DataTable dt = new DataTable();
             dt = ConnectionDB.ExecuteSelect(query);

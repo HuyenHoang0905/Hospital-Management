@@ -28,11 +28,21 @@ namespace BUS
             dt = DalBNChoKhamCLS.GetBenhNhanID(mabn);
             return dt;
         }
-        public DataTable SearchBenhNhanID(String mabn)
+        public DataTable SearchBenhNhanMaYeuCau(String MaYeuCau)
         {
             DataTable dt = new DataTable();
-            dt = DalBNChoKhamCLS.SearchBenhNhanID(mabn);
+            dt = DalBNChoKhamCLS.SearchBenhNhanMaYeuCau(MaYeuCau);
             return dt;
+        }
+        public DataTable SelectBNMaYeuCau(String MaYeuCau)
+        {
+            DataTable dt = new DataTable();
+            dt = DalBNChoKhamCLS.SelectBNMaYeuCau(MaYeuCau);
+            return dt;
+        }
+        public void DeleteBNMaYeuCau(String MaYeuCau)
+        {
+            DalBNChoKhamCLS.DeleteBNMaYeuCau(MaYeuCau);
         }
     }
 }

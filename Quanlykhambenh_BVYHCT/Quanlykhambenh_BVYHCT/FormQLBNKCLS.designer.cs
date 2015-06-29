@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLBNKCLS));
             this.DGVBenhNhan = new System.Windows.Forms.DataGridView();
-            this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BTCapNhatKQ = new System.Windows.Forms.Button();
             this.BTThemPhieuCLS = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -64,10 +64,9 @@
             this.RDBNChoKham = new System.Windows.Forms.RadioButton();
             this.RDListBNUpdateKQ = new System.Windows.Forms.RadioButton();
             this.DTGVCapNhatKQ = new System.Windows.Forms.DataGridView();
+            this.RDBNChuaChuyenKQ = new System.Windows.Forms.RadioButton();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RDBNChuaChuyenKQ = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.DGVBenhNhan)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -80,9 +79,9 @@
             this.DGVBenhNhan.AllowUserToDeleteRows = false;
             this.DGVBenhNhan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVBenhNhan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaBN,
-            this.TenBN,
-            this.Column});
+            this.Column1,
+            this.Column2,
+            this.Column3});
             this.DGVBenhNhan.Location = new System.Drawing.Point(12, 123);
             this.DGVBenhNhan.Name = "DGVBenhNhan";
             this.DGVBenhNhan.ReadOnly = true;
@@ -90,26 +89,26 @@
             this.DGVBenhNhan.TabIndex = 0;
             this.DGVBenhNhan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVBenhNhan_CellClick);
             // 
-            // MaBN
+            // Column1
             // 
-            this.MaBN.DataPropertyName = "MaBenhNhan";
-            this.MaBN.HeaderText = "Mã bệnh nhân";
-            this.MaBN.Name = "MaBN";
-            this.MaBN.ReadOnly = true;
+            this.Column1.DataPropertyName = "MaYeuCau";
+            this.Column1.HeaderText = "Mã yêu cầu";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
-            // TenBN
+            // Column2
             // 
-            this.TenBN.DataPropertyName = "TenBN";
-            this.TenBN.HeaderText = "Tên bệnh nhân";
-            this.TenBN.Name = "TenBN";
-            this.TenBN.ReadOnly = true;
+            this.Column2.DataPropertyName = "MaBenhNhan";
+            this.Column2.HeaderText = "Mã bệnh nhân";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
-            // Column
+            // Column3
             // 
-            this.Column.DataPropertyName = "TrangThaiThanhToan";
-            this.Column.HeaderText = "Thu tiền";
-            this.Column.Name = "Column";
-            this.Column.ReadOnly = true;
+            this.Column3.DataPropertyName = "TenBN";
+            this.Column3.HeaderText = "Tên bệnh nhân";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // BTCapNhatKQ
             // 
@@ -432,14 +431,24 @@
             this.DTGVCapNhatKQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DTGVCapNhatKQ.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
+            this.dataGridViewTextBoxColumn2});
             this.DTGVCapNhatKQ.Location = new System.Drawing.Point(12, 123);
             this.DTGVCapNhatKQ.Name = "DTGVCapNhatKQ";
             this.DTGVCapNhatKQ.ReadOnly = true;
             this.DTGVCapNhatKQ.Size = new System.Drawing.Size(301, 358);
             this.DTGVCapNhatKQ.TabIndex = 16;
             this.DTGVCapNhatKQ.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGVCapNhatKQ_CellClick);
+            // 
+            // RDBNChuaChuyenKQ
+            // 
+            this.RDBNChuaChuyenKQ.AutoSize = true;
+            this.RDBNChuaChuyenKQ.Location = new System.Drawing.Point(45, 97);
+            this.RDBNChuaChuyenKQ.Name = "RDBNChuaChuyenKQ";
+            this.RDBNChuaChuyenKQ.Size = new System.Drawing.Size(208, 17);
+            this.RDBNChuaChuyenKQ.TabIndex = 17;
+            this.RDBNChuaChuyenKQ.Text = "Danh sách bệnh chưa chuyển kết quả";
+            this.RDBNChuaChuyenKQ.UseVisualStyleBackColor = true;
+            this.RDBNChuaChuyenKQ.CheckedChanged += new System.EventHandler(this.RDBNChuaChuyenKQ_CheckedChanged);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -454,24 +463,6 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "Mã phiếu khám";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "TrangThaiThanhToan";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Thu tiền";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // RDBNChuaChuyenKQ
-            // 
-            this.RDBNChuaChuyenKQ.AutoSize = true;
-            this.RDBNChuaChuyenKQ.Location = new System.Drawing.Point(45, 97);
-            this.RDBNChuaChuyenKQ.Name = "RDBNChuaChuyenKQ";
-            this.RDBNChuaChuyenKQ.Size = new System.Drawing.Size(208, 17);
-            this.RDBNChuaChuyenKQ.TabIndex = 17;
-            this.RDBNChuaChuyenKQ.Text = "Danh sách bệnh chưa chuyển kết quả";
-            this.RDBNChuaChuyenKQ.UseVisualStyleBackColor = true;
-            this.RDBNChuaChuyenKQ.CheckedChanged += new System.EventHandler(this.RDBNChuaChuyenKQ_CheckedChanged);
             // 
             // FormQLBNKCLS
             // 
@@ -539,16 +530,15 @@
         private System.Windows.Forms.Button BtTimKiem;
         private System.Windows.Forms.Button BTXemKQ;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaBN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenBN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column;
         private System.Windows.Forms.RadioButton RDBNChoKham;
         private System.Windows.Forms.RadioButton RDListBNUpdateKQ;
         private System.Windows.Forms.DataGridView DTGVCapNhatKQ;
+        private System.Windows.Forms.RadioButton RDBNChuaChuyenKQ;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.RadioButton RDBNChuaChuyenKQ;
     }
 }
 

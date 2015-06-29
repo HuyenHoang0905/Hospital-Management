@@ -11,5 +11,6 @@ namespace Entities
         public BenhNhanChoKhamCLS() { }
         public String MaBenhNhan { get; set; }
         public String MaBSYeuCau { get; set; }
+        public String MaYeuCau { get; set; }
     }
 }
