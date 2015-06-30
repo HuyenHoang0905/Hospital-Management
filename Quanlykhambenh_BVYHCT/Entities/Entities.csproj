@@ -39,8 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="ChoKhamCLS_Entities.cs" />
     <Compile Include="HoSoBenhAn_Entities.cs" />
+=======
+    <Compile Include="BenhNhanCapNhatKQ.cs" />
+    <Compile Include="BenhNhanChoKhamCLS.cs" />
+    <Compile Include="ClassVariableStatic.cs" />
+    <Compile Include="PhieuKhamCLS.cs" />
+>>>>>>> origin/master
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

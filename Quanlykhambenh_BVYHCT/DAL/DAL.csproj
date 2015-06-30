@@ -39,8 +39,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="DataConnect.cs" />
+=======
+    <Compile Include="ConnectDB.cs" />
+    <Compile Include="DALBenhNhanChoKhamCLS.cs" />
+    <Compile Include="DALDanhMucKhamCLS.cs" />
+    <Compile Include="DALNguoiDung.cs" />
+    <Compile Include="DALPhieuKhamCLS.cs" />
+>>>>>>> origin/master
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{b3f543a9-620d-4f79-af13-7518b378b3ea}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

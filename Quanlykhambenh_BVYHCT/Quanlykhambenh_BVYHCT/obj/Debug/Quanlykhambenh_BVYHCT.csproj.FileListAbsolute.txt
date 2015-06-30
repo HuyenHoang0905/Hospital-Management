@@ -40,11 +40,8 @@ C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlyk
 C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormXuatThuocChoBN.resources
 C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.Properties.Resources.resources
 C:\Users\PC\Desktop\DungTTCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.csproj.GenerateResource.Cache
-F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\Quanlykhambenh_BVYHCT.exe.config
-F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\Quanlykhambenh_BVYHCT.exe
-F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\Quanlykhambenh_BVYHCT.pdb
-F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.csprojResolveAssemblyReference.cache
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormCapNhatKetQua.resources
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.csprojResolveAssemblyReference.cache
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormNhapThuoc.resources
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormQLBNKCLS.resources
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormQLKhoDuoc.resources
@@ -55,12 +52,16 @@ F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormXuatThuocChoBN.resources
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.Properties.Resources.resources
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.csproj.GenerateResource.Cache
-F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.exe
-F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.pdb
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\Quanlykhambenh_BVYHCT.exe.config
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\Quanlykhambenh_BVYHCT.exe
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\Quanlykhambenh_BVYHCT.pdb
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\BUS.dll
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\Entities.dll
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\DAL.dll
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\BUS.pdb
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\Entities.pdb
 F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\DAL.pdb
+<<<<<<< HEAD
 E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.csprojResolveAssemblyReference.cache
 E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormCapNhatKetQua.resources
 E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.FormNhapThuoc.resources
@@ -85,3 +86,7 @@ E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\
 E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\BUS.pdb
 E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\Entities.pdb
 E:\Thuctap_CNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\bin\Debug\DAL.pdb
+=======
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.exe
+F:\ThucCNTT\Hospital-Management\Quanlykhambenh_BVYHCT\Quanlykhambenh_BVYHCT\obj\Debug\Quanlykhambenh_BVYHCT.pdb
+>>>>>>> origin/master
