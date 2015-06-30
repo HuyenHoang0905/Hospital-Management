@@ -16,7 +16,7 @@ namespace Quanlykhambenh_BVYHCT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormQLBNKCLS());
+            Application.Run(new QuanLyKhamBenh());
         }
     }
 }
